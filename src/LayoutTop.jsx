@@ -1,16 +1,15 @@
-import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 
 export const LayoutTop = () => {
     const location = useLocation()
     return (
-        <Navbar expand='lg' fixed='top' bg='dark' data-bs-theme='dark'>
+        <Navbar expand='lg' sticky='top' data-bs-theme='dark' style={{backgroundColor: 'rgb(15, 14, 14)'}}>
             <Container>
-                <Navbar.Brand>ryanmichaeljones.co.uk</Navbar.Brand>
+                <Navbar.Brand href='/'><strong style={{ color: '#0d7af6' }}>{'</>'}</strong> ryanmjones.co.uk</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                <Navbar.Collapse>
-                    <Nav className='me-auto' activeKey={location.pathname} style={{ fontFamily: 'Poppins-Regular' }}>
+                <Navbar.Collapse className='justify-content-end'>
+                    <Nav className='ms-auto' activeKey={location.pathname} >
                         <Nav.Link href='/'>Home</Nav.Link>
                         <Nav.Link href='/about'>About</Nav.Link>
                         <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
