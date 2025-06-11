@@ -1,10 +1,42 @@
 [
     {
         "href": "/portfolio/dissertation",
-        "header": "",
+        "header": "Dissertation",
         "imagePath": "",
-        "title": "",
-        "text": "",
-        "footer": ""
+        "title": "Procedural Dungeon Generator",
+        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "footer": "C#, Unity"
+    },
+    {
+        "href": "/portfolio/dissertation",
+        "header": "Dissertation",
+        "imagePath": "",
+        "title": "Procedural Dungeon Generator",
+        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "footer": "C#, Unity"
+    },
+    {
+        "href": "/portfolio/dissertation",
+        "header": "Dissertation",
+        "imagePath": "",
+        "title": "Procedural Dungeon Generator",
+        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "footer": "C#, Unity"
+    },
+    {
+        "href": "/portfolio/dissertation",
+        "header": "Dissertation",
+        "imagePath": "",
+        "title": "Procedural Dungeon Generator",
+        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "footer": "C#, Unity"
+    },
+    {
+        "href": "/portfolio/dissertation",
+        "header": "Dissertation",
+        "imagePath": "",
+        "title": "Procedural Dungeon Generator",
+        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "footer": "C#, Unity"
     }
 ]

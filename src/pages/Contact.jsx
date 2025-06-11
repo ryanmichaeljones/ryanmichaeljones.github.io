@@ -1,8 +1,5 @@
 import { Col, Container, Form, Row } from "react-bootstrap"
-import { Footer } from "./components/Footer"
-
-// build template to build all pages from if reusable components
-// PortfolioLayout component to use for all portfolio pages with markdown
+import { Footer } from "../components/Footer"
 
 export const Contact = () => {
     return (

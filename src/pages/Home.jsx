@@ -1,10 +1,6 @@
-import { Button, Col, Container, Image, Row } from "react-bootstrap"
-import profile from './assets/profile4.jpg'
-import background from './assets/background.jpg'
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
-import PhoneIcon from '@mui/icons-material/Phone'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import GitHubIcon from '@mui/icons-material/GitHub'
+import { Button, Col, Container, Image, Row } from 'react-bootstrap'
+import profile from '../assets/profile4.jpg'
+import background from '../assets/background.jpg'
 
 export const Home = () => {
     return (
@@ -16,12 +12,6 @@ export const Home = () => {
                         <h1>Game Developer / Software Engineer</h1>
                         <h2>London, UK</h2>
                         <Button size='lg' variant="outline-light" href="/portfolio" style={{ marginTop: '10px' }}>My Portfolio</Button>
-                        {/* <p className="mt-2">
-                            <AlternateEmailIcon style={{ fontSize: '32px' }} />
-                            <PhoneIcon style={{ fontSize: '32px' }} />
-                            <LinkedInIcon style={{ fontSize: '32px' }} />
-                            <GitHubIcon style={{ fontSize: '30px' }} />
-                        </p> */}
                     </Col>
                     <Col xs={2} className="align-self-center d-flex justify-content-end">
                         <Image height={300} src={profile} roundedCircle style={{ border: '4px solid rgba(255,255,255,0.2)', marginTop: '-30px' }} />

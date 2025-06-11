@@ -1,12 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
-// import './App.css'
-import { Home } from './Home'
-import { Col, Container, Navbar, Row } from 'react-bootstrap'
+import { Home } from './pages/Home'
 import { LayoutTop } from './LayoutTop'
-import background from './assets/background.jpg'
-import { About } from './About'
-import { Portfolio } from './Portfolio'
-import { Contact } from './Contact'
+import { About } from './pages/About'
+import { Portfolio } from './pages/Portfolio'
+import { Contact } from './pages/Contact'
 import { PortfolioPage } from './PortfolioPage'
 import PortfolioPages from './assets/portfolio-pages.json'
 import { useEffect, useState } from 'react'
@@ -22,7 +19,6 @@ export default function App() {
 
     }, [])
 
-    console.log(portfolioRoutes)
     return (
         <BrowserRouter basename=''>
             <div style={{ height: '100vh', overflowY: 'hidden' }}>
