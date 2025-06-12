@@ -1,0 +1,50 @@
+[
+    {
+        "label": "C#",
+        "progress": 99
+    },
+    {
+        "label": "C++",
+        "progress": 80
+    },
+    {
+        "label": "JavaScript",
+        "progress": 99
+    },
+    {
+        "label": "HTML + CSS",
+        "progress": 99
+    },
+    {
+        "label": "Visual Basic for Applications (VBA)",
+        "progress": 60
+    },
+    {
+        "label": "Java",
+        "progress": 40
+    },
+    {
+        "label": "Unity",
+        "progress": 99
+    },
+    {
+        "label": "OpenGL",
+        "progress": 60
+    },
+    {
+        "label": "React",
+        "progress": 90
+    },
+    {
+        "label": "Bootstrap",
+        "progress": 99
+    },
+    {
+        "label": "Linux Ubuntu",
+        "progress": 60
+    },
+    {
+        "label": "Problem Solving",
+        "progress": 99
+    }
+]

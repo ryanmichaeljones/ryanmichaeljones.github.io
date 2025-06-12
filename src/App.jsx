@@ -24,12 +24,13 @@ export default function App() {
             <div style={{ height: '100vh', overflowY: 'hidden' }}>
                 <LayoutTop />
                 <Routes>
-                    <Route path='/' element={<Home />}></Route>
-                    <Route path='/about' element={<About />}></Route>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/about' element={<About />} />
                     <Route path='/portfolio' element={<Portfolio />} />
                     <Route path='/contact' element={<Contact />} />
-                    {portfolioRoutes?.map(r => <Route path={r.to} element={<PortfolioPage markdown={r.markdown} />} />)}
-                    {/* <Route path='' element={<PortfolioPage markdown={dissertationPage} />}/> */}
+                    {portfolioRoutes.map(r => (
+                        <Route key={r.to} path={r.to} element={<PortfolioPage markdown={r.markdown} />} />
+                    ))}
                 </Routes>
             </div>
         </BrowserRouter>

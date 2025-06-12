@@ -1,5 +1,5 @@
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
-import profile from '../assets/profile4.jpg'
+import profile from '../assets/home-profile.jpg'
 import background from '../assets/background.jpg'
 
 export const Home = () => {

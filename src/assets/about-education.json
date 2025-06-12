@@ -1,0 +1,20 @@
+[
+    {
+        "title": "BSc Games Software Engineering",
+        "institution": "Bournemouth University",
+        "period": "September 2018 - June 2021",
+        "description": "Dissertation: Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon. BSc (Hons) Games Software Engineering: Second Class (Upper) Honours."
+    },
+    {
+        "title": "A Levels",
+        "institution": "Palmers Sixth Form College",
+        "period": "September 2016 - June 2018",
+        "description": "Mathematics, Computer Science, Physics."
+    },
+    {
+        "title": "GCSEs",
+        "institution": "St Clere's Secondary School",
+        "period": "September 2011 - June 2016",
+        "description": "Mathematics, ICT, Physics, Product Design, Religious Studies, Chemistry, Biology, History, English Language, English Literature."
+    }
+]

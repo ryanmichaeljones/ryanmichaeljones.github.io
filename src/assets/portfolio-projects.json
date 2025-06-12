@@ -8,35 +8,67 @@
         "footer": "C#, Unity"
     },
     {
-        "href": "/portfolio/dissertation",
-        "header": "Dissertation",
+        "href": "/portfolio/chaotic-engine",
+        "header": "Chaotic Engine",
         "imagePath": "",
-        "title": "Procedural Dungeon Generator",
-        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "title": "Custom 3D Game Engine",
+        "text": "Project which started as a university assignment and continued to be developed in my free time",
+        "footer": "C#, OpenGL, SDL"
+    },
+    {
+        "href": "/portfolio/portfolio-website",
+        "header": "Portfolio Website",
+        "imagePath": "",
+        "title": "Custom Website",
+        "text": "Website developed in my free time to host my portfolio of work",
+        "footer": "React, JavaScript, HTML, CSS"
+    },
+    {
+        "href": "/portfolio/playtech-slot-games",
+        "header": "Playtech Slot Games",
+        "imagePath": "",
+        "title": "Slot Games",
+        "text": "Collection of slot games that I helped develop and balance",
+        "footer": "Miscellaneous"
+    },
+    {
+        "href": "/portfolio/maze-fps-game",
+        "header": "Maze FPS Game",
+        "imagePath": "",
+        "title": "3D Recursive Backtracker Maze Game",
+        "text": "First-person shooter in randomised procedural maze levels using AI enemies and physics",
         "footer": "C#, Unity"
     },
     {
-        "href": "/portfolio/dissertation",
-        "header": "Dissertation",
+        "href": "/portfolio/dynamic-preference-menu",
+        "header": "Dynamic Preference Menu",
         "imagePath": "",
-        "title": "Procedural Dungeon Generator",
-        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "title": "Settings Menu Builder",
+        "text": "Utility to build menus dynamically with preferences based on user requirements",
         "footer": "C#, Unity"
     },
     {
-        "href": "/portfolio/dissertation",
-        "header": "Dissertation",
+        "href": "/portfolio/ribit-run-game",
+        "header": "Ribit Run Game",
         "imagePath": "",
-        "title": "Procedural Dungeon Generator",
-        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
-        "footer": "C#, Unity"
+        "title": "Frogger-inspired 2D Game",
+        "text": "University assignment which took inspiration from classic 1981 game Frogger",
+        "footer": "C++, SDL"
     },
     {
-        "href": "/portfolio/dissertation",
-        "header": "Dissertation",
+        "href": "/portfolio/tender-proposal",
+        "header": "Project Management",
         "imagePath": "",
-        "title": "Procedural Dungeon Generator",
-        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
-        "footer": "C#, Unity"
+        "title": "Tender Proposal",
+        "text": "University assignment to produce a tender proposal for the Natural History Museum",
+        "footer": "Microsoft Project"
+    },
+    {
+        "href": "/portfolio",
+        "header": "Under Construction",
+        "imagePath": "",
+        "title": "Coming Soon",
+        "text": "Check here again soon for updates!",
+        "footer": "..."
     }
 ]
