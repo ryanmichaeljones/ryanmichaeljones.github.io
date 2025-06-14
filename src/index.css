@@ -63,6 +63,14 @@
             font-size: 1.5em;
             line-height: 1.2;
         }
+
+        .home-button:hover {
+            background: rgba(13, 122, 246, 0.15) !important;
+            box-shadow: 0 8px 32px 0 rgba(13, 122, 246, 0.12), 0 1.5px 6px 0 rgba(0, 0, 0, 0.10);
+            border-color: #0d7af6 !important;
+            color: #fff;
+            text-decoration: none;
+        }
     }
 
     .about {
@@ -120,6 +128,15 @@
             font-size: 1.0em;
             line-height: 1.2;
             opacity: 80%;
+        }
+
+        .portfolio-card:hover {
+            background: rgba(13, 122, 246, 0.15) !important;
+            transform: scale(1.02);
+            box-shadow: 0 8px 32px 0 rgba(13, 122, 246, 0.12), 0 1.5px 6px 0 rgba(0, 0, 0, 0.10);
+            border-color: #0d7af6 !important;
+            color: #fff;
+            text-decoration: none;
         }
     }
 }
