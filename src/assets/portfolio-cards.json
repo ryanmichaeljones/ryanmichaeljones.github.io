@@ -1,0 +1,66 @@
+[
+    {
+        "to": "/portfolio/dissertation",
+        "header": "Dissertation",
+        "imagePath": "",
+        "title": "Procedural Dungeon",
+        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "footer": "C#, Unity"
+    },
+    {
+        "to": "/portfolio/chaotic-engine",
+        "header": "Chaotic Engine",
+        "imagePath": "",
+        "title": "Custom Game Engine",
+        "text": "Initially a university assignment which I continued to develop",
+        "footer": "C#, OpenGL, SDL"
+    },
+    {
+        "to": "/portfolio/portfolio-website",
+        "header": "Portfolio Website",
+        "imagePath": "",
+        "title": "Custom Website",
+        "text": "Website developed in my free time to host my portfolio of work",
+        "footer": "React, JavaScript, Vite, HTML, CSS"
+    },
+    {
+        "to": "/portfolio/playtech-slot-games",
+        "header": "Playtech Projects",
+        "imagePath": "",
+        "title": "Slot Games",
+        "text": "Collection of slot games that I helped develop and balance",
+        "footer": "Miscellaneous"
+    },
+    {
+        "to": "/portfolio/maze-fps-game",
+        "header": "Maze FPS Game",
+        "imagePath": "",
+        "title": "3D Backtracker Maze Game",
+        "text": "First-person shooter in randomised procedural maze levels using AI and physics",
+        "footer": "C#, Unity"
+    },
+    {
+        "to": "/portfolio/dynamic-preference-menu",
+        "header": "Dynamic Menu",
+        "imagePath": "",
+        "title": "Settings Menu Builder",
+        "text": "Utility to build menus dynamically with preferences based on user requirements",
+        "footer": "C#, Unity"
+    },
+    {
+        "to": "/portfolio/ribit-run-game",
+        "header": "Ribit Run Game",
+        "imagePath": "",
+        "title": "Frogger-inspired Game",
+        "text": "University assignment which took inspiration from classic 1981 game Frogger",
+        "footer": "C++, SDL"
+    },
+    {
+        "to": "/portfolio/tender-proposal",
+        "header": "Project Management",
+        "imagePath": "",
+        "title": "Tender Proposal",
+        "text": "University assignment to produce a tender proposal for the Natural History Museum",
+        "footer": "Microsoft Project"
+    }
+]

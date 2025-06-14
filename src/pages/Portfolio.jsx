@@ -1,23 +1,27 @@
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import background from '../assets/background.jpg'
 import { Footer } from '../components/Footer'
-import projects from '../assets/portfolio-projects.json'
+import projects from '../assets/portfolio-cards.json'
 import { NavLink } from 'react-router-dom'
 import { groupBy } from '../utils/GroupBy'
+
+const CARD_BG = 'rgba(255,255,255,0.07)'
+const CARD_HOVER_BG = 'rgba(13, 122, 246, 0.15)'
+const CARD_BORDER = '1.5px solid #0d7af6'
 
 export const Portfolio = () => {
     const projectRowData = groupBy(projects, (_, i) => Math.floor(i / 4))
 
     return (
         <div className='portfolio'>
-            <Container style={{ color: 'white' }}>
+            <Container style={{ color: 'white'}}>
                 <Row className="pt-4">
                     <Col>
                         <h1>My Projects</h1>
                     </Col>
                 </Row>
                 {projectRowData?.map((g, i) => (
-                    <PortfolioItemRow index={i} group={g} />
+                    <PortfolioItemRow key={i} index={i} group={g} />
                 ))}
                 <Footer />
             </Container>
@@ -26,10 +30,11 @@ export const Portfolio = () => {
 }
 
 const PortfolioItemRow = ({ index, group }) => (
-    <Row className={index === 0 ? 'mt-1' : 'mt-3'}>
-        {group.map(v => (
+    <Row className={index === 0 ? 'mt-1' : 'mt-4'} style={{ gap: 0 }}>
+        {group.map((v, idx) => (
             <PortfolioItem
-                to={v.href}
+                key={v.to || idx}
+                to={v.to}
                 header={v.header}
                 imageSrc={background}
                 title={v.title}
@@ -41,16 +46,44 @@ const PortfolioItemRow = ({ index, group }) => (
 )
 
 const PortfolioItem = ({ to, header, imageSrc, title, text, footer }) => (
-    <Col xs={3}>
-        <NavLink to={to} style={{ textDecoration: 'none' }}>
-            <Card className="h-100" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'white' }}>
-                <Card.Header>{header}</Card.Header>
-                <Card.Img height={120} src={imageSrc} />
+    <Col xs={12} sm={6} md={4} lg={3} className="d-flex align-items-stretch">
+        <NavLink to={to} style={{ textDecoration: 'none', width: '100%' }}>
+            <Card
+                className="h-100 shadow-sm portfolio-card"
+                style={{
+                    backgroundColor: CARD_BG,
+                    color: 'white',
+                    transition: 'transform 0.18s, box-shadow 0.18s, background 0.18s'
+                }}
+            >
+                <Card.Header style={{
+                    background: 'transparent',
+                    borderBottom: '1px solid rgba(255,255,255,0.08)',
+                    fontWeight: 600,
+                    fontSize: '1.1em',
+                    letterSpacing: '0.01em'
+                }}>
+                    {header}
+                </Card.Header>
+                <div style={{
+                    background: `url(${imageSrc}) center/cover no-repeat`,
+                    height: 120,
+                    borderBottom: '1px solid rgba(255,255,255,0.08)'
+                }} />
                 <Card.Body>
-                    <Card.Title>{title}</Card.Title>
-                    <Card.Text as={'h3'}>{text}</Card.Text>
+                    <Card.Title style={{ fontWeight: 600, fontSize: '1.15em' }}>{title}</Card.Title>
+                    <Card.Text as="div" style={{ fontSize: '1em', opacity: 0.92, minHeight: 48 }}>
+                        {text}
+                    </Card.Text>
                 </Card.Body>
-                <Card.Footer>{footer}</Card.Footer>
+                <Card.Footer style={{
+                    background: 'transparent',
+                    borderTop: '1px solid rgba(255,255,255,0.08)',
+                    fontSize: '0.95em',
+                    opacity: 0.8
+                }}>
+                    {footer}
+                </Card.Footer>
             </Card>
         </NavLink>
     </Col>

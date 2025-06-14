@@ -4,21 +4,10 @@ import { LayoutTop } from './LayoutTop'
 import { About } from './pages/About'
 import { Portfolio } from './pages/Portfolio'
 import { Contact } from './pages/Contact'
-import { PortfolioPage } from './PortfolioPage'
-import PortfolioPages from './assets/portfolio-pages.json'
-import { useEffect, useState } from 'react'
+import { PortfolioProject } from './pages/PortfolioProject'
+import projects from './assets/portfolio-projects.json'
 
 export default function App() {
-    const [portfolioRoutes, setPortfolioRoutes] = useState([])
-
-    useEffect(() => {
-        Promise.all(PortfolioPages.map(p => fetch(p.markdown, { method: 'get' })
-            .then(res => res.text())
-            .then(text => ({ to: p.to, markdown: text }))))
-            .then(routes => setPortfolioRoutes(routes))
-
-    }, [])
-
     return (
         <BrowserRouter basename=''>
             <div style={{ height: '100vh', overflowY: 'hidden' }}>
@@ -28,8 +17,8 @@ export default function App() {
                     <Route path='/about' element={<About />} />
                     <Route path='/portfolio' element={<Portfolio />} />
                     <Route path='/contact' element={<Contact />} />
-                    {portfolioRoutes.map(r => (
-                        <Route key={r.to} path={r.to} element={<PortfolioPage markdown={r.markdown} />} />
+                    {projects.map(project => (
+                        <Route key={project.to} path={project.to} element={<PortfolioProject project={project} />} />
                     ))}
                 </Routes>
             </div>

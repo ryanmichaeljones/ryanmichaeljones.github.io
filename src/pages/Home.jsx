@@ -1,20 +1,53 @@
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import profile from '../assets/home-profile.jpg'
 import background from '../assets/background.jpg'
+import { NavLink } from 'react-router-dom'
 
 export const Home = () => {
     return (
-        <div className="home" style={{ backgroundImage: `linear-gradient(0deg, rgba(31, 29, 29, 0.95), rgba(31, 29, 29, 0.95)),url(${background})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            <Container style={{ color: 'white' }}>
-                <Row className="align-middle d-flex" style={{ paddingTop: '30vh' }}>
-                    <Col xs={10}>
-                        <h1 style={{ color: '#0d7af6' }}>Hey! I am Ryan Jones</h1>
-                        <h1>Game Developer / Software Engineer</h1>
-                        <h2>London, UK</h2>
-                        <Button size='lg' variant="outline-light" href="/portfolio" style={{ marginTop: '10px' }}>My Portfolio</Button>
+        <div
+            className="home"
+            style={{
+                backgroundImage: `linear-gradient(0deg, rgba(31, 29, 29, 0.95), rgba(31, 29, 29, 0.95)),url(${background})`, backgroundSize: 'cover', backgroundPosition: 'center',
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}
+        >
+            <Container style={{ paddingTop: '7vh', paddingBottom: '3vh' }}>
+                <Row className="align-items-center mb-5">
+                    <Col md={8}>
+                        <h1 style={{ fontWeight: 700, fontSize: "3rem", color: "#0d7af6" }}>
+                            Hi, I'm Ryan
+                        </h1>
+                        <h2 style={{ fontWeight: 400, fontSize: "1.5rem", color: "#fff", opacity: 0.85 }}>
+                            Game Developer & Software Engineer
+                        </h2>
+                        <p style={{ fontSize: "1.1rem", color: "#b3b3b3" }}>
+                            Building engaging experiences and solving complex problems with code.<br />
+                            Based in London, UK.
+                        </p>
+                        <Button
+                            as={NavLink}
+                            to="/portfolio"
+                            size="md"
+                            variant="success"
+                            style={{ fontWeight: 600, background: "#0d7af6", border: "none" }}
+                        >
+                            View My Work
+                        </Button>
                     </Col>
-                    <Col xs={2} className="align-self-center d-flex justify-content-end">
-                        <Image height={300} src={profile} roundedCircle style={{ border: '4px solid rgba(255,255,255,0.2)', marginTop: '-30px' }} />
+                    <Col md={4} className="d-flex justify-content-end">
+                        <Image
+                            src={profile}
+                            roundedCircle
+                            height={280}
+                            style={{
+                                // border: "5px solid #0d7af6",
+                                // boxShadow: "0 4px 32px rgba(0,0,0,0.5)"
+                            }}
+                        />
                     </Col>
                 </Row>
             </Container>

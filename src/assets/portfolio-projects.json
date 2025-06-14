@@ -1,74 +1,103 @@
 [
     {
-        "href": "/portfolio/dissertation",
-        "header": "Dissertation",
-        "imagePath": "",
-        "title": "Procedural Dungeon Generator",
-        "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
-        "footer": "C#, Unity"
+        "to": "/portfolio/portfolio-website",
+        "title": "Personal Portfolio Website",
+        "subtitle": "A modern, responsive portfolio built with React and Bootstrap",
+        "period": "2025",
+        "images": [
+            {
+                "src": "image1.jpg",
+                "alt": "Homepage"
+            },
+            {
+                "src": "image2.jpg",
+                "alt": "Projects Section"
+            },
+            {
+                "src": "image3.jpg",
+                "alt": "Contact Section"
+            }
+        ],
+        "description": "This website is my personal portfolio, designed and developed to showcase my projects, skills, and experience. \nIt was built from scratch using React for the frontend and Bootstrap for responsive design. \nThe site features modular components, clean routing, and a focus on accessibility and performance. \nI deployed it using GitHub Pages for easy updates and continuous integration.",
+        "features": [
+            "Responsive design with Bootstrap",
+            "Component-based architecture using React",
+            "Deployed with GitHub Actions and GitHub Pages",
+            "Clean routing and modular code structure",
+            "Accessible and performant UI",
+            "Project and content data managed using JSON files for easy updates"
+        ],
+        "links": [
+            {
+                "label": "GitHub Repo",
+                "url": "https://github.com/ryanmichaeljones/ryan-jones-portfolio"
+            },
+            {
+                "label": "Live Site",
+                "url": "https://ryanjones.dev"
+            }
+        ]
     },
     {
-        "href": "/portfolio/chaotic-engine",
-        "header": "Chaotic Engine",
-        "imagePath": "",
-        "title": "Custom 3D Game Engine",
-        "text": "Project which started as a university assignment and continued to be developed in my free time",
-        "footer": "C#, OpenGL, SDL"
+        "to": "/portfolio/dissertation",
+        "title": "Procedural Dungeon Generation Dissertation",
+        "subtitle": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
+        "period": "2021",
+        "images": [
+            {
+                "src": "dungeon1.jpg",
+                "alt": "Generated Dungeon Layout"
+            },
+            {
+                "src": "dungeon2.jpg",
+                "alt": "Room and Tunnel Generation"
+            }
+        ],
+        "description": "For my final year dissertation, I developed a procedural dungeon generator in Unity using C#. The project focused on investigating and implementing algorithms for generating dungeon levels with rooms of varying sizes and interconnected tunnels. Prim's Minimum Spanning Tree algorithm was used to determine how rooms are connected, while A* Search controlled the pathfinding for tunnels between rooms. The system enables the creation of unpredictable, replayable dungeon layouts, demonstrating the benefits of procedural content generation in game development. I achieved a first for the completed project and dissertation.",
+        "features": [
+            "Procedural generation of dungeon layouts",
+            "Prim's Minimum Spanning Tree for room connectivity",
+            "A* Search algorithm for tunnel pathfinding",
+            "Randomized room sizes and positions",
+            "Developed in Unity with C#",
+            "Comprehensive evaluation of procedural generation techniques"
+        ],
+        "links": [
+            {
+                "label": "Dissertation PDF",
+                "url": "https://example.com/dissertation.pdf"
+            },
+            {
+                "label": "Unity Project (Private)",
+                "url": "https://github.com/ryanmichaeljones/dungeon-generator"
+            }
+        ]
     },
     {
-        "href": "/portfolio/portfolio-website",
-        "header": "Portfolio Website",
-        "imagePath": "",
-        "title": "Custom Website",
-        "text": "Website developed in my free time to host my portfolio of work",
-        "footer": "React, JavaScript, HTML, CSS"
-    },
-    {
-        "href": "/portfolio/playtech-slot-games",
-        "header": "Playtech Slot Games",
-        "imagePath": "",
-        "title": "Slot Games",
-        "text": "Collection of slot games that I helped develop and balance",
-        "footer": "Miscellaneous"
-    },
-    {
-        "href": "/portfolio/maze-fps-game",
-        "header": "Maze FPS Game",
-        "imagePath": "",
-        "title": "3D Recursive Backtracker Maze Game",
-        "text": "First-person shooter in randomised procedural maze levels using AI enemies and physics",
-        "footer": "C#, Unity"
-    },
-    {
-        "href": "/portfolio/dynamic-preference-menu",
-        "header": "Dynamic Preference Menu",
-        "imagePath": "",
-        "title": "Settings Menu Builder",
-        "text": "Utility to build menus dynamically with preferences based on user requirements",
-        "footer": "C#, Unity"
-    },
-    {
-        "href": "/portfolio/ribit-run-game",
-        "header": "Ribit Run Game",
-        "imagePath": "",
-        "title": "Frogger-inspired 2D Game",
-        "text": "University assignment which took inspiration from classic 1981 game Frogger",
-        "footer": "C++, SDL"
-    },
-    {
-        "href": "/portfolio/tender-proposal",
-        "header": "Project Management",
-        "imagePath": "",
-        "title": "Tender Proposal",
-        "text": "University assignment to produce a tender proposal for the Natural History Museum",
-        "footer": "Microsoft Project"
-    },
-    {
-        "href": "/portfolio",
-        "header": "Under Construction",
-        "imagePath": "",
-        "title": "Coming Soon",
-        "text": "Check here again soon for updates!",
-        "footer": "..."
+        "to": "/portfolio/chaotic-engine",
+        "title": "Custom Game Engine",
+        "subtitle": "Chaotic Engine - A modular game engine built from scratch",
+        "period": "2023",
+        "images": [
+            {
+                "src": "",
+                "alt": "Chaotic Engine Screenshot"
+            }
+        ],
+        "description": "Chaotic Engine began as a university assignment and evolved into a personal project focused on building a modular game engine from the ground up. Developed in C# with OpenGL for rendering and SDL for window and input management, the engine supports basic 2D and 3D rendering, scene management, and a component-based entity system. The project deepened my understanding of graphics programming, engine architecture, and cross-platform development.",
+        "features": [
+            "Custom rendering pipeline using OpenGL",
+            "Window and input management with SDL",
+            "Component-based entity system",
+            "Scene management and serialization",
+            "Support for both 2D and 3D graphics",
+            "Written in C#"
+        ],
+        "links": [
+            {
+                "label": "GitHub Repo",
+                "url": "https://github.com/ryanmichaeljones/chaotic-engine"
+            }
+        ]
     }
 ]
