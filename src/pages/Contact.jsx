@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Button, Col, Container, Form, Row, Alert } from "react-bootstrap"
-import { Footer } from "../components/Footer"
+import { Footer } from "@/components/Footer"
 
 export const Contact = () => {
     const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" })
@@ -139,6 +139,20 @@ export const Contact = () => {
                                 Send Message
                             </Button>
                         </Form>
+                        <div className="mt-4">
+                            <p style={{ opacity: 0.85 }}>
+                                Interested in hiring and want to know more? &nbsp;
+                                <a
+                                    href="/resume"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ textDecoration: "underline", color: "#fff" }}
+                                >
+                                    View my resume
+                                </a>
+                                .
+                            </p>
+                        </div>
                     </Col>
                 </Row>
                 <Footer />

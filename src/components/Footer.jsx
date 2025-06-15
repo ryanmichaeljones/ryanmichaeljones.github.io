@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 export const Footer = () => {
     return (
         <footer className="text-center pt-5 pb-3" style={{ opacity: '60%' }}>
-            Copyright © Ryan Jones 2025
+            Copyright © Ryan Jones {new Date().getFullYear()}
             <p className="mt-1">
                 <a href="mailto:ryanmichaeljonesbusiness@gmail.com" style={{ color: 'white' }}><AlternateEmailIcon style={{ fontSize: '32px' }} /></a>
                 <a href="tel:+447930373660" style={{ color: 'white' }}><PhoneIcon style={{ fontSize: '32px' }} /></a>
@@ -16,3 +16,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+// const IconLink = ({ href, icon }) => 

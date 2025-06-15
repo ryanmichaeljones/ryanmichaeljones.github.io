@@ -1,6 +1,6 @@
 import { Col, Container, Row, Image, Badge, Carousel } from "react-bootstrap"
-import { Footer } from "../components/Footer"
-import image from "../assets/background.jpg" // Replace with actual images
+import { Footer } from "@/components/Footer"
+import image from "@/assets/background.jpg" // Replace with actual images
 
 export const PortfolioProject = ({ project }) => (
     <div className='portfolio'>

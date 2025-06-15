@@ -1,10 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap"
-import { Footer } from "../components/Footer"
-import { SkillProgressBar } from "../components/ProgressBar"
-import educationData from '../assets/about-education.json'
-import experienceData from '../assets/about-experience.json'
-import skillsData from '../assets/about-skills.json'
-import { groupBy } from "../utils/GroupBy"
+import { Footer } from "@/components/Footer"
+import { SkillProgressBar } from "@/components/ProgressBar"
+import educationData from '@/assets/about-education.json'
+import experienceData from '@/assets/about-experience.json'
+import skillsData from '@/assets/about-skills.json'
+import { groupBy } from "@/utils/GroupBy"
 
 export const About = () => {
     const skillColData = groupBy(skillsData, (_, i) => Math.floor(i / 6))

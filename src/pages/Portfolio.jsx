@@ -1,9 +1,9 @@
 import { Card, Col, Container, Row } from 'react-bootstrap'
-import background from '../assets/background.jpg'
-import { Footer } from '../components/Footer'
-import projects from '../assets/portfolio-cards.json'
+import background from '@/assets/background.jpg'
+import { Footer } from '@/components/Footer'
+import projects from '@/assets/portfolio-cards.json'
 import { NavLink } from 'react-router-dom'
-import { groupBy } from '../utils/GroupBy'
+import { groupBy } from '@/utils/GroupBy'
 
 // const allImages = import.meta.glob('./assets/images/*.jpg')
 

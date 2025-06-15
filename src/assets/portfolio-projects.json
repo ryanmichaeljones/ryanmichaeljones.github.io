@@ -149,7 +149,7 @@
         "to": "/portfolio/maze-fps-game",
         "title": "Maze FPS Game",
         "subtitle": "A procedurally generated maze-based first-person shooter",
-        "period": "2019",
+        "period": "2018",
         "images": [
             {
                 "src": "/images/portfolio-content/5-maze-fps-game/maze-fps-game-1.png",
@@ -214,7 +214,7 @@
         "to": "/portfolio/ribit-run-game",
         "title": "Ribit Run",
         "subtitle": "A Frogger-inspired arcade game developed in C++ and SDL",
-        "period": "2022",
+        "period": "2019",
         "images": [
             {
                 "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-1.png",
