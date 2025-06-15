@@ -21,14 +21,14 @@ export const PortfolioProject = ({ project }) => (
                         style={{ border: '2px solid #fff', borderRadius: '10px', overflow: 'hidden' }}
                     >
                         {project.images.map((img, idx) => (
-                            <Carousel.Item key={idx}>
-                                <div style={{ borderRadius: '10px', overflow: 'hidden' }}>
+                            <Carousel.Item key={idx} style={{ zIndex: 0}}>
+                                <div style={{ overflow: 'hidden' }}>
                                     <Image
                                         // src={img.src}
-                                        src={image}
+                                        src={img.src || image} // Fallback to a default image if src is empty
                                         alt={img.alt}
                                         fluid
-                                        style={{ borderRadius: 0 }}
+                                        style={{ borderRadius: 0, objectFit: 'cover', height: '45vh', zIndex: 1 }}
                                     />
                                 </div>
                             </Carousel.Item>
@@ -38,13 +38,13 @@ export const PortfolioProject = ({ project }) => (
                 <Col md={6}>
                     <h2>Description</h2>
                     <p>{project.description}</p>
-                    <h2>Features</h2>
+                    {project.features.length === 0 || <h2>Features</h2>}
                     <ul>
                         {project.features.map((feature, idx) => (
                             <li key={idx}>{feature}</li>
                         ))}
                     </ul>
-                    <h2>Links</h2>
+                    {project.links.length === 0 || <h2>Links</h2>}
                     <ul>
                         {project.links.map(link => (
                             <li key={link.url}>

@@ -2,7 +2,7 @@
     {
         "to": "/portfolio/dissertation",
         "header": "Dissertation",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/dissertation.png",
         "title": "Procedural Dungeon",
         "text": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
         "footer": "C#, Unity"
@@ -10,7 +10,7 @@
     {
         "to": "/portfolio/chaotic-engine",
         "header": "Chaotic Engine",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/game-engine.png",
         "title": "Custom Game Engine",
         "text": "Initially a university assignment which I continued to develop",
         "footer": "C#, OpenGL, SDL"
@@ -18,7 +18,7 @@
     {
         "to": "/portfolio/portfolio-website",
         "header": "Portfolio Website",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/portfolio-website.png",
         "title": "Custom Website",
         "text": "Website developed in my free time to host my portfolio of work",
         "footer": "React, JavaScript, Vite, HTML, CSS"
@@ -26,7 +26,7 @@
     {
         "to": "/portfolio/playtech-slot-games",
         "header": "Playtech Projects",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/playtech.png",
         "title": "Slot Games",
         "text": "Collection of slot games that I helped develop and balance",
         "footer": "Miscellaneous"
@@ -34,7 +34,7 @@
     {
         "to": "/portfolio/maze-fps-game",
         "header": "Maze FPS Game",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/maze-fps.png",
         "title": "3D Backtracker Maze Game",
         "text": "First-person shooter in randomised procedural maze levels using AI and physics",
         "footer": "C#, Unity"
@@ -42,7 +42,7 @@
     {
         "to": "/portfolio/dynamic-preference-menu",
         "header": "Dynamic Menu",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/dynamic-menu.png",
         "title": "Settings Menu Builder",
         "text": "Utility to build menus dynamically with preferences based on user requirements",
         "footer": "C#, Unity"
@@ -50,7 +50,7 @@
     {
         "to": "/portfolio/ribit-run-game",
         "header": "Ribit Run Game",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/ribit-run.png",
         "title": "Frogger-inspired Game",
         "text": "University assignment which took inspiration from classic 1981 game Frogger",
         "footer": "C++, SDL"
@@ -58,7 +58,7 @@
     {
         "to": "/portfolio/tender-proposal",
         "header": "Project Management",
-        "imagePath": "",
+        "imagePath": "/images/portfolio-thumbnails/tender-proposal.png",
         "title": "Tender Proposal",
         "text": "University assignment to produce a tender proposal for the Natural History Museum",
         "footer": "Microsoft Project"

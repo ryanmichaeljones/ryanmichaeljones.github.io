@@ -1,56 +1,21 @@
 [
     {
-        "to": "/portfolio/portfolio-website",
-        "title": "Personal Portfolio Website",
-        "subtitle": "A modern, responsive portfolio built with React and Bootstrap",
-        "period": "2025",
-        "images": [
-            {
-                "src": "image1.jpg",
-                "alt": "Homepage"
-            },
-            {
-                "src": "image2.jpg",
-                "alt": "Projects Section"
-            },
-            {
-                "src": "image3.jpg",
-                "alt": "Contact Section"
-            }
-        ],
-        "description": "This website is my personal portfolio, designed and developed to showcase my projects, skills, and experience. \nIt was built from scratch using React for the frontend and Bootstrap for responsive design. \nThe site features modular components, clean routing, and a focus on accessibility and performance. \nI deployed it using GitHub Pages for easy updates and continuous integration.",
-        "features": [
-            "Responsive design with Bootstrap",
-            "Component-based architecture using React",
-            "Deployed with GitHub Actions and GitHub Pages",
-            "Clean routing and modular code structure",
-            "Accessible and performant UI",
-            "Project and content data managed using JSON files for easy updates"
-        ],
-        "links": [
-            {
-                "label": "GitHub Repo",
-                "url": "https://github.com/ryanmichaeljones/ryan-jones-portfolio"
-            },
-            {
-                "label": "Live Site",
-                "url": "https://ryanjones.dev"
-            }
-        ]
-    },
-    {
         "to": "/portfolio/dissertation",
         "title": "Procedural Dungeon Generation Dissertation",
         "subtitle": "Implementing a Procedural Algorithm for Generation of a Rogue-like Dungeon",
         "period": "2021",
         "images": [
             {
-                "src": "dungeon1.jpg",
-                "alt": "Generated Dungeon Layout"
+                "src": "/images/portfolio-content/1-dissertation/dissertation-1.png",
+                "alt": "Generated Dungeon Layout 1"
             },
             {
-                "src": "dungeon2.jpg",
-                "alt": "Room and Tunnel Generation"
+                "src": "/images/portfolio-content/1-dissertation/dissertation-2.png",
+                "alt": "Generated Dungeon Layout 2"
+            },
+            {
+                "src": "/images/portfolio-content/1-dissertation/dissertation-3.png",
+                "alt": "Generated Dungeon Layout 3"
             }
         ],
         "description": "For my final year dissertation, I developed a procedural dungeon generator in Unity using C#. The project focused on investigating and implementing algorithms for generating dungeon levels with rooms of varying sizes and interconnected tunnels. Prim's Minimum Spanning Tree algorithm was used to determine how rooms are connected, while A* Search controlled the pathfinding for tunnels between rooms. The system enables the creation of unpredictable, replayable dungeon layouts, demonstrating the benefits of procedural content generation in game development. I achieved a first for the completed project and dissertation.",
@@ -80,8 +45,16 @@
         "period": "2023",
         "images": [
             {
-                "src": "",
-                "alt": "Chaotic Engine Screenshot"
+                "src": "/images/portfolio-content/2-chaotic-engine/engine-1.png",
+                "alt": "Chaotic Engine 1"
+            },
+            {
+                "src": "/images/portfolio-content/2-chaotic-engine/engine-2.png",
+                "alt": "Chaotic Engine 2"
+            },
+            {
+                "src": "/images/portfolio-content/2-chaotic-engine/engine-3.png",
+                "alt": "Chaotic Engine 3"
             }
         ],
         "description": "Chaotic Engine began as a university assignment and evolved into a personal project focused on building a modular game engine from the ground up. Developed in C# with OpenGL for rendering and SDL for window and input management, the engine supports basic 2D and 3D rendering, scene management, and a component-based entity system. The project deepened my understanding of graphics programming, engine architecture, and cross-platform development.",
@@ -99,5 +72,202 @@
                 "url": "https://github.com/ryanmichaeljones/chaotic-engine"
             }
         ]
+    },
+    {
+        "to": "/portfolio/portfolio-website",
+        "title": "Personal Portfolio Website",
+        "subtitle": "A modern, responsive portfolio built with React and Bootstrap",
+        "period": "2025",
+        "images": [
+            {
+                "src": "/images/portfolio-content/3-portfolio-website/homepage.png",
+                "alt": "Homepage"
+            },
+            {
+                "src": "/images/portfolio-content/3-portfolio-website/about-section.png",
+                "alt": "About Section"
+            },
+            {
+                "src": "/images/portfolio-content/3-portfolio-website/projects-section.png",
+                "alt": "Projects Section"
+            },
+            {
+                "src": "/images/portfolio-content/3-portfolio-website/contact-section.png",
+                "alt": "Contact Section"
+            }
+        ],
+        "description": "This website is my personal portfolio, designed and developed to showcase my projects, skills, and experience. \nIt was built from scratch using React for the frontend and Bootstrap for responsive design. \nThe site features modular components, clean routing, and a focus on accessibility and performance. \nI deployed it using GitHub Pages for easy updates and continuous integration.",
+        "features": [
+            "Responsive design with Bootstrap",
+            "Component-based architecture using React",
+            "Deployed with GitHub Actions and GitHub Pages",
+            "Clean routing and modular code structure",
+            "Accessible and performant UI",
+            "Project and content data managed using JSON files for easy updates"
+        ],
+        "links": [
+            {
+                "label": "GitHub Repo",
+                "url": "https://github.com/ryanmichaeljones/ryan-jones-portfolio"
+            },
+            {
+                "label": "Live Site",
+                "url": "https://ryanjones.dev"
+            }
+        ]
+    },
+    {
+        "to": "/portfolio/playtech-slot-games",
+        "title": "Playtech Slot Games",
+        "subtitle": "Gambling slot games balanced and developed",
+        "period": "2024-Present",
+        "images": [
+            {
+                "src": "/images/portfolio-content/4-slot-games/gold-trio-lil-demon.png",
+                "alt": "Gold Trio Lil Demon Slot Game"
+            },
+            {
+                "src": "/images/portfolio-content/4-slot-games/lil-sphinx.png",
+                "alt": "Gold Trio Lil Sphinx Slot Game"
+            },
+            {
+                "src": "/images/portfolio-content/4-slot-games/gold-trio-leprechauns-luck.png",
+                "alt": "Gold Trio Leprechaun's Luck Slot Game"
+            }
+        ],
+        "description": "I have worked on the logic and balancing for several gambling slot games at Playtech, including Gold Trio Lil Demon, Gold Trio Lil Sphinx, and Gold Trio Leprechaun's Luck. My responsibilities included implementing and testing game logic, ensuring fair and engaging gameplay, and balancing payout rates to meet regulatory requirements. I focused on creating a fun and rewarding experience for the player through engaging features and well-tuned game mechanics.",
+        "features": [
+            "Game logic development for multiple slot games",
+            "Balancing payout rates and game features",
+            "Ensured compliance with gambling regulations",
+            "Created a fun and rewarding player experience",
+            "Notable work includes Gold Trio Lil Demon, Lil Sphinx, and Leprechaun's Luck"
+        ],
+        "links": []
+    },
+    {
+        "to": "/portfolio/maze-fps-game",
+        "title": "Maze FPS Game",
+        "subtitle": "A procedurally generated maze-based first-person shooter",
+        "period": "2019",
+        "images": [
+            {
+                "src": "/images/portfolio-content/5-maze-fps-game/maze-fps-game-1.png",
+                "alt": "Maze FPS Game - Gameplay Screenshot 1"
+            },
+            {
+                "src": "/images/portfolio-content/5-maze-fps-game/maze-fps-game-2.png",
+                "alt": "Maze FPS Game - Gameplay Screenshot 2"
+            }
+        ],
+        "description": "This game was my first major programming project, produced during college. Game levels are made up of procedurally generated mazes, created using the Recursive Backtracker algorithm for random layouts. The A* algorithm is used to verify that each maze is solvable before it is used as a level. The player must traverse the maze from start to finish before the timer runs out, defeating enemies and collecting items to maximise their score. The game was developed in Unity using C#.",
+        "features": [
+            "Procedural maze generation using Recursive Backtracker",
+            "Maze solvability ensured with A* algorithm",
+            "First-person shooter gameplay",
+            "Timer-based challenge for each level",
+            "Enemies and collectables to increase score",
+            "Developed in Unity with C#"
+        ],
+        "links": [
+            {
+                "label": "Unity Project (Private)",
+                "url": "https://github.com/ryanmichaeljones/maze-fps-game"
+            }
+        ]
+    },
+    {
+        "to": "/portfolio/dynamic-preference-menu",
+        "title": "Dynamic Preference Menu Utility",
+        "subtitle": "A Unity tool for generating customizable in-game menus",
+        "period": "2023",
+        "images": [
+            {
+                "src": "/images/portfolio-content/6-dynamic-menu/dynamic-preference-menu-1.png",
+                "alt": "Dynamic Preference Menu - Example Menu"
+            },
+            {
+                "src": "/images/portfolio-content/6-dynamic-menu/dynamic-preference-menu-2.png",
+                "alt": "Dynamic Preference Menu - Inspector View"
+            }
+        ],
+        "description": "A utility developed in Unity and C# to make it easier to generate menus dynamically for game projects. The tool allows developers to define menu options directly in the Unity inspector, supporting various option types such as toggles, input fields, sliders, and dropdowns. Each option supports default values, and user choices are saved and remembered using Unity's PlayerPrefs system. The menu can easily be integrated into any Unity project as a prefab.",
+        "features": [
+            "Developed with Unity and C#",
+            "Easily generate dynamic menus for games",
+            "Define options and requirements in the Unity inspector",
+            "Supports toggles, input fields, sliders, and dropdowns",
+            "Remembers user choices using Unity PlayerPrefs"
+        ],
+        "links": [
+            {
+                "label": "GitHub Repo",
+                "url": "https://github.com/ryanmichaeljones/dynamic-preference-menu"
+            },
+            {
+                "label": "Web Example",
+                "url": "https://ryanjones.dev/dynamic-preference-menu"
+            }
+        ]
+    },
+    {
+        "to": "/portfolio/ribit-run-game",
+        "title": "Ribit Run",
+        "subtitle": "A Frogger-inspired arcade game developed in C++ and SDL",
+        "period": "2022",
+        "images": [
+            {
+                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-1.png",
+                "alt": "Ribit Run - Gameplay Screenshot 1"
+            },
+            {
+                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-2.png",
+                "alt": "Ribit Run - Gameplay Screenshot 2"
+            },
+            {
+                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-3.png",
+                "alt": "Ribit Run - Gameplay Screenshot 2"
+            }
+        ],
+        "description": "Ribit Run was a university assignment which took inspiration from the classic 1981 game Frogger. The aim of the game is to reach the bottom of the screen without falling from logs and colliding with the moving enemies. The player score increases for each successful run and the player must complete as many runs as they can without letting their character die. The game was programmed in C++ and SDL. This assignment was the first project I completed which integrated SDL features.",
+        "features": [
+            "Frogger-inspired arcade gameplay",
+            "Player must avoid moving enemies and falling from logs",
+            "Score increases for each successful run",
+            "Multiple runs per game session",
+            "Developed in C++ using SDL",
+            "First project integrating SDL features"
+        ],
+        "links": [
+            {
+                "label": "GitHub Repo (Private)",
+                "url": "https://github.com/ryanmichaeljones/ribit-run"
+            }
+        ]
+    },
+    {
+        "to": "/portfolio/tender-proposal",
+        "title": "Tender Proposal: Monsters of the Museum",
+        "subtitle": "Educational mobile app proposal for the Natural History Museum",
+        "period": "2021",
+        "images": [
+            {
+                "src": "/images/portfolio-content/8-project-management/tender-proposal-1.png",
+                "alt": "Tender Proposal 1"
+            },
+            {
+                "src": "/images/portfolio-content/8-project-management/tender-proposal-2.png",
+                "alt": "Tender Proposal 2"
+            }
+        ],
+        "description": "As part of the final year of my degree, I was tasked with producing a tender proposal for a scenario where the Natural History Museum needed a product to be developed. The product that was required was an educational mobile app called \"Monsters of the Museum\" which would provide learning materials for visitors to the museum.\n\nThe features of the proposal included:\n\n- Product Specification: Outlined the proposed app features.\n- Project Development Plan: Organised task scheduling and staff hours using Microsoft Project.\n- Financial & Commercial Data: Calculated the project budget using Microsoft Excel.\n\nI am very pleased with how this assignment went and it taught me a great deal about how projects are managed within a company. I achieved 78% for this project.",
+        "features": [
+            "Detailed product specification for an educational mobile app",
+            "Project development plan with task scheduling and staff allocation (Microsoft Project)",
+            "Financial and commercial data analysis (Microsoft Excel)",
+            "Focus on project management and real-world business processes",
+            "Achieved 78% for the assignment"
+        ],
+        "links": []
     }
 ]

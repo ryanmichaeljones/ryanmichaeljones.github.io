@@ -5,16 +5,21 @@ import projects from '../assets/portfolio-cards.json'
 import { NavLink } from 'react-router-dom'
 import { groupBy } from '../utils/GroupBy'
 
+// const allImages = import.meta.glob('./assets/images/*.jpg')
+
 const CARD_BG = 'rgba(255,255,255,0.07)'
 const CARD_HOVER_BG = 'rgba(13, 122, 246, 0.15)'
 const CARD_BORDER = '1.5px solid #0d7af6'
 
 export const Portfolio = () => {
     const projectRowData = groupBy(projects, (_, i) => Math.floor(i / 4))
+    // const allImages = import.meta.glob('../assets/images/portfolio-thumbnails/*.jpg')
+
+    // allImages["../assets/images/portfolio-thumbnails/dissertation-1.jpg"]().then(m => console.log(m))
 
     return (
         <div className='portfolio'>
-            <Container style={{ color: 'white'}}>
+            <Container style={{ color: 'white' }}>
                 <Row className="pt-4">
                     <Col>
                         <h1>My Projects</h1>
@@ -36,7 +41,7 @@ const PortfolioItemRow = ({ index, group }) => (
                 key={v.to || idx}
                 to={v.to}
                 header={v.header}
-                imageSrc={background}
+                imageSrc={v.imagePath === '' ? background : v.imagePath}
                 title={v.title}
                 text={v.text}
                 footer={v.footer}
@@ -53,22 +58,23 @@ const PortfolioItem = ({ to, header, imageSrc, title, text, footer }) => (
                 style={{
                     backgroundColor: CARD_BG,
                     color: 'white',
-                    transition: 'transform 0.18s, box-shadow 0.18s, background 0.18s'
+                    transition: 'transform 0.18s, box-shadow 0.18s, background 0.18s',
                 }}
             >
                 <Card.Header style={{
                     background: 'transparent',
-                    borderBottom: '1px solid rgba(255,255,255,0.08)',
+                    borderBottom: '0',
                     fontWeight: 600,
                     fontSize: '1.1em',
                     letterSpacing: '0.01em'
                 }}>
                     {header}
                 </Card.Header>
-                <div style={{
-                    background: `url(${imageSrc}) center/cover no-repeat`,
-                    height: 120,
-                    borderBottom: '1px solid rgba(255,255,255,0.08)'
+                <Card.Img className="align-self-center" src={imageSrc} style={{
+                    // maxHeight: 120,
+                    objectFit: 'cover',
+                    // width: '90%',
+                    height: '11vh'
                 }} />
                 <Card.Body>
                     <Card.Title style={{ fontWeight: 600, fontSize: '1.15em' }}>{title}</Card.Title>
