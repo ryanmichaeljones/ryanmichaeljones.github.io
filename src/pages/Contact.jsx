@@ -2,8 +2,10 @@ import { useState } from "react"
 import { Button, Col, Container, Form, Row, Alert } from "react-bootstrap"
 import { Footer } from "@/components/Footer"
 
+const initialForm = { name: "", email: "", subject: "", message: "" }
+
 export const Contact = () => {
-    const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" })
+    const [form, setForm] = useState(initialForm)
     const [submitted, setSubmitted] = useState(false)
     const [validated, setValidated] = useState(false)
     const [error, setError] = useState(null)
@@ -17,7 +19,7 @@ export const Contact = () => {
         e.preventDefault()
         setValidated(true)
         setError(null)
-        if (form.name && form.email && form.subject && form.message) {
+        if (Object.values(form).every(Boolean)) {
             try {
                 const response = await fetch("https://formspree.io/f/xknlbrqg", {
                     method: "POST",
@@ -25,22 +27,17 @@ export const Contact = () => {
                         "Accept": "application/json",
                         "Content-Type": "application/json"
                     },
-                    body: JSON.stringify({
-                        name: form.name,
-                        email: form.email,
-                        subject: form.subject,
-                        message: form.message
-                    })
+                    body: JSON.stringify(form)
                 })
                 const data = await response.json()
                 if (response.ok) {
                     setSubmitted(true)
-                    setForm({ name: "", email: "", subject: "", message: "" })
+                    setForm(initialForm)
                     setValidated(false)
                 } else {
                     setError(data.error || "Something went wrong. Please try again later.")
                 }
-            } catch (err) {
+            } catch {
                 setError("Something went wrong. Please try again later.")
             }
         }
