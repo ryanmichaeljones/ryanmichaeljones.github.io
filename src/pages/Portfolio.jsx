@@ -3,37 +3,28 @@ import background from '@/assets/background.jpg'
 import { Footer } from '@/components/Footer'
 import projects from '@/assets/portfolio-cards.json'
 import { NavLink } from 'react-router-dom'
-import { groupBy } from '@/utils/GroupBy'
 
 const CARD_BG = 'rgba(255,255,255,0.07)'
 
 export const Portfolio = () => {
-    const projectRows = groupBy(projects, (_, i) => Math.floor(i / 4))
-
     return (
         <div className="portfolio">
             <Container style={{ color: 'white' }}>
                 <Row className="pt-4">
                     <Col>
-                        <h1>My Projects</h1>
+                        <h1 className="mb-0">My Projects</h1>
                     </Col>
                 </Row>
-                {projectRows?.map((group, i) => (
-                    <PortfolioItemRow key={i} first={i === 0} group={group} />
-                ))}
+                <Row className='mt-n2'>
+                    {projects.map((item, idx) => (
+                        <PortfolioItem key={item.to || idx} {...item} />
+                    ))}
+                </Row>
                 <Footer />
             </Container>
         </div>
     )
 }
-
-const PortfolioItemRow = ({ first, group }) => (
-    <Row className={first ? 'mt-1' : 'mt-4'} style={{ gap: 0 }}>
-        {group.map((item, idx) => (
-            <PortfolioItem key={item.to || idx} {...item} />
-        ))}
-    </Row>
-)
 
 const PortfolioItem = ({
     to,
@@ -43,7 +34,15 @@ const PortfolioItem = ({
     text,
     footer
 }) => (
-    <Col xs={12} sm={6} md={4} lg={3} className="d-flex align-items-stretch">
+    <Col
+        xs={12}
+        sm={6}
+        md={6}
+        lg={4}
+        xl={3}
+        xxl={3}
+        className="d-flex align-items-stretch g-3"
+    >
         <NavLink to={to} style={{ textDecoration: 'none', width: '100%' }}>
             <Card
                 className="h-100 shadow-sm portfolio-card"

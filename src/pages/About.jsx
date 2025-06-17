@@ -28,7 +28,7 @@ export const About = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col xs={12} md={6}>
                         <h1>Education</h1>
                         <div className="education-list">
                             {educationData.map(edu => (
@@ -42,7 +42,7 @@ export const About = () => {
                             ))}
                         </div>
                     </Col>
-                    <Col>
+                    <Col xs={12} md={6}>
                         <h1>Experience</h1>
                         <div className="experience-list">
                             {experienceData.map(exp => (

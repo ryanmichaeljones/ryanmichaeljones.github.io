@@ -15,7 +15,7 @@ export const PortfolioProject = ({ project }) => (
                 </Col>
             </Row>
             <Row className="mt-4">
-                <Col md={6}>
+                <Col lg={6}>
                     <Carousel
                         style={{
                             border: "2px solid #fff",
@@ -33,12 +33,13 @@ export const PortfolioProject = ({ project }) => (
                                         objectFit: "cover",
                                         height: "45vh",
                                     }}
+                                    className="portfolio-card-img"
                                 />
                             </Carousel.Item>
                         ))}
                     </Carousel>
                 </Col>
-                <Col md={6}>
+                <Col lg={6} className="pt-3 pt-lg-0">
                     <Section title="Description">
                         <p>{project.description}</p>
                     </Section>

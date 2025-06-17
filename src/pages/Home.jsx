@@ -17,10 +17,10 @@ export const Home = () => (
         }}
     >
         <Container style={{ paddingTop: '7vh', paddingBottom: '3vh' }}>
-            <Row className="align-items-center mb-5">
-                <Col md={8}>
+            <Row className="align-items-center mb-5 flex-column-reverse flex-lg-row text-center text-lg-start">
+                <Col xs={12} lg={8}>
                     <h1 style={{ fontWeight: 700, fontSize: "3rem", color: "#0d7af6" }}>
-                        Hi, I'm Ryan
+                        Hello, I'm Ryan!
                     </h1>
                     <h2 style={{ fontWeight: 400, fontSize: "1.5rem", color: "#fff", opacity: 0.85 }}>
                         Game Developer & Software Engineer
@@ -39,7 +39,7 @@ export const Home = () => (
                         View My Work
                     </Button>
                 </Col>
-                <Col md={4} className="d-flex justify-content-end">
+                <Col xs={12} lg={4} className="d-flex justify-content-center justify-content-lg-end">
                     <Image
                         src={profile}
                         roundedCircle

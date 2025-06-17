@@ -7,6 +7,7 @@ import { Contact } from '@/pages/Contact'
 import { PortfolioProject } from '@/pages/PortfolioProject'
 import projects from '@/assets/portfolio-projects.json'
 import { Resume } from '@/pages/Resume'
+import { NotFound } from '@/pages/NotFound' // Add this import
 
 export default function App() {
     return (
@@ -22,6 +23,7 @@ export default function App() {
                         <Route key={project.to} path={project.to} element={<PortfolioProject project={project} />} />
                     ))}
                     <Route path='/resume' element={<Resume />} />
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
             </div>
         </BrowserRouter>
