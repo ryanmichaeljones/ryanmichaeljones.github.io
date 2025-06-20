@@ -81,7 +81,7 @@
         "images": [
             {
                 "src": "/images/portfolio-content/3-portfolio-website/homepage.png",
-                "alt": "Homepage"
+                "alt": "Home Section"
             },
             {
                 "src": "/images/portfolio-content/3-portfolio-website/about-section.png",
@@ -100,7 +100,7 @@
         "features": [
             "Responsive design with Bootstrap",
             "Component-based architecture using React",
-            "Deployed with GitHub Actions and GitHub Pages",
+            "Deployed with GitHub Pages",
             "Clean routing and modular code structure",
             "Accessible and performant UI",
             "Project and content data managed using JSON files for easy updates"
@@ -112,7 +112,7 @@
             },
             {
                 "label": "Live Site",
-                "url": "https://ryanjones.dev"
+                "url": "https://www.ryanmjones.co.uk"
             }
         ]
     },

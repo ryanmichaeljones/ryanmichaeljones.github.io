@@ -9,6 +9,7 @@ export const Contact = () => {
     const [submitted, setSubmitted] = useState(false)
     const [validated, setValidated] = useState(false)
     const [error, setError] = useState(null)
+    const [loading, setLoading] = useState(false)
 
     const handleChange = e => {
         const { name, value } = e.target
@@ -19,6 +20,7 @@ export const Contact = () => {
         e.preventDefault()
         setValidated(true)
         setError(null)
+        setLoading(true)
         if (Object.values(form).every(Boolean)) {
             try {
                 const response = await fetch("https://formspree.io/f/xknlbrqg", {
@@ -39,7 +41,11 @@ export const Contact = () => {
                 }
             } catch {
                 setError("Something went wrong. Please try again later.")
+            } finally {
+                setLoading(false)
             }
+        } else {
+            setLoading(false)
         }
     }
 
@@ -132,8 +138,8 @@ export const Contact = () => {
                                     Please enter your message.
                                 </Form.Control.Feedback>
                             </Form.Group>
-                            <Button variant="primary" type="submit" className="mt-2">
-                                Send Message
+                            <Button variant="primary" type="submit" className="mt-2" disabled={loading}>
+                                {loading ? "Sending..." : "Send Message"}
                             </Button>
                         </Form>
                         <div className="mt-4">
