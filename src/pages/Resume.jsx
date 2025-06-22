@@ -9,7 +9,7 @@ export const Resume = () => {
         >
             <p>
                 Unable to display PDF.{' '}
-                <a href="/Ryan Jones CV.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="./Ryan Jones CV.pdf" target="_blank" rel="noopener noreferrer">
                     Download Ryan Jones CV.pdf
                 </a>
             </p>
