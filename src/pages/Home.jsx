@@ -16,7 +16,7 @@ export const Home = () => (
             justifyContent: 'center'
         }}
     >
-        <Container style={{ marginTop: '7vh', marginBottom: '3vh', paddingLeft: '8vw', paddingRight: '8vw' }}>
+        <Container style={{ marginTop: '7vh', marginBottom: '3vh' }}>
             <Row className="align-items-center mb-5 flex-column-reverse flex-lg-row text-center text-lg-start">
                 <Col xs={12} lg={8}>
                     <h1
@@ -77,7 +77,7 @@ export const Home = () => (
                         src={profile}
                         roundedCircle
                         alt="Ryan Jones"
-                        style={{ height: '36vh', width: 'auto', maxWidth: '260px', minHeight: '180px' }}
+                        style={{ height: 'auto', width: '15vw', minWidth: '200px' }}
                     />
                 </Col>
             </Row>
