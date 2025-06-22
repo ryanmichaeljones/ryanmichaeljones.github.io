@@ -1,7 +1,7 @@
 export const Resume = () => {
     return (
         <object
-            data="/Ryan Jones CV.pdf"
+            data="./Ryan Jones CV.pdf"
             type="application/pdf"
             width="100%"
             height="100%"
