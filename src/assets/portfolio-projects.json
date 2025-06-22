@@ -25,16 +25,13 @@
             "A* Search algorithm for tunnel pathfinding",
             "Randomized room sizes and positions",
             "Developed in Unity with C#",
-            "Comprehensive evaluation of procedural generation techniques"
+            "Comprehensive evaluation of procedural generation techniques",
+            "Dynamic dungeon size with user-configurable room count"
         ],
         "links": [
             {
-                "label": "Dissertation PDF",
-                "url": "https://example.com/dissertation.pdf"
-            },
-            {
-                "label": "Unity Project (Private)",
-                "url": "https://github.com/ryanmichaeljones/dungeon-generator"
+                "label": "Repository",
+                "url": "https://github.com/ryanmichaeljones/Dungeon-Generator"
             }
         ]
     },
@@ -57,7 +54,7 @@
                 "alt": "Chaotic Engine 3"
             }
         ],
-        "description": "Chaotic Engine began as a university assignment and evolved into a personal project focused on building a modular game engine from the ground up. Developed in C# with OpenGL for rendering and SDL for window and input management, the engine supports basic 2D and 3D rendering, scene management, and a component-based entity system. The project deepened my understanding of graphics programming, engine architecture, and cross-platform development.",
+        "description": "Chaotic Engine began as a university assignment and evolved into a personal project focused on building a modular game engine from the ground up. The engine was originally created at university using C++ and OpenGL, before being further developed in C# with OpenGL for rendering and SDL for window and input management. The engine supports basic 2D and 3D rendering, scene management, and a component-based entity system. The project deepened my understanding of graphics programming, engine architecture, and cross-platform development.",
         "features": [
             "Custom rendering pipeline using OpenGL",
             "Window and input management with SDL",
@@ -68,7 +65,11 @@
         ],
         "links": [
             {
-                "label": "GitHub Repo",
+                "label": "Latest repository with C# and OpenTK",
+                "url": "https://github.com/ryanmichaeljones/Engine"
+            },
+            {
+                "label": "Orginal repository with C++ and OpenGL",
                 "url": "https://github.com/ryanmichaeljones/chaotic-engine"
             }
         ]
@@ -96,19 +97,21 @@
                 "alt": "Contact Section"
             }
         ],
-        "description": "This website is my personal portfolio, designed and developed to showcase my projects, skills, and experience. \nIt was built from scratch using React for the frontend and Bootstrap for responsive design. \nThe site features modular components, clean routing, and a focus on accessibility and performance. \nI deployed it using GitHub Pages for easy updates and continuous integration.",
+        "description": "This website is my personal portfolio, designed and developed to showcase my projects, skills, and experience. \nIt was built from scratch using React for the frontend and Bootstrap for responsive design. \nThe site features modular components, clean routing, and a focus on accessibility and performance. \nI used Vite as the build tool for fast development and optimized production builds. I deployed it using GitHub Pages for easy updates and continuous integration. The site uses a custom domain managed through Cloudflare, providing SSL for secure access.",
         "features": [
             "Responsive design with Bootstrap",
             "Component-based architecture using React",
+            "Built and bundled with Vite",
             "Deployed with GitHub Pages",
             "Clean routing and modular code structure",
             "Accessible and performant UI",
-            "Project and content data managed using JSON files for easy updates"
+            "Project and content data managed using JSON files for easy updates",
+            "Custom domain with SSL provided by Cloudflare"
         ],
         "links": [
             {
-                "label": "GitHub Repo",
-                "url": "https://github.com/ryanmichaeljones/ryan-jones-portfolio"
+                "label": "Repository",
+                "url": "https://github.com/ryanmichaeljones/ryanmichaeljones.github.io"
             },
             {
                 "label": "Live Site",
@@ -143,7 +146,20 @@
             "Created a fun and rewarding player experience",
             "Notable work includes Gold Trio Lil Demon, Lil Sphinx, and Leprechaun's Luck"
         ],
-        "links": []
+        "links": [
+            {
+                "label": "Play Gold Trio Lil Demon",
+                "url": "https://www.betfred.com/casino/lildemongoldtrio"
+            },
+            {
+                "label": "Play Gold Trio Leprechaun's Luck",
+                "url": "https://www.betfred.com/casino/leprechaunsluckgoldtrio"
+            },
+            {
+                "label": "Play Lil Sphinx",
+                "url": "https://www.betfred.com/casino/lilsphinx"
+            }
+        ]
     },
     {
         "to": "/portfolio/maze-fps-game",
@@ -171,8 +187,8 @@
         ],
         "links": [
             {
-                "label": "Unity Project (Private)",
-                "url": "https://github.com/ryanmichaeljones/maze-fps-game"
+                "label": "Repository",
+                "url": "https://github.com/ryanmichaeljones/Recursive-Maze"
             }
         ]
     },
@@ -201,12 +217,8 @@
         ],
         "links": [
             {
-                "label": "GitHub Repo",
-                "url": "https://github.com/ryanmichaeljones/dynamic-preference-menu"
-            },
-            {
-                "label": "Web Example",
-                "url": "https://ryanjones.dev/dynamic-preference-menu"
+                "label": "Repository",
+                "url": "https://github.com/ryanmichaeljones/DynamicPreferenceMenu"
             }
         ]
     },
@@ -238,12 +250,7 @@
             "Developed in C++ using SDL",
             "First project integrating SDL features"
         ],
-        "links": [
-            {
-                "label": "GitHub Repo (Private)",
-                "url": "https://github.com/ryanmichaeljones/ribit-run"
-            }
-        ]
+        "links": []
     },
     {
         "to": "/portfolio/tender-proposal",
