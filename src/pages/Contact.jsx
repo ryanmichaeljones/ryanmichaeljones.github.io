@@ -138,7 +138,7 @@ export const Contact = () => {
                                     Please enter your message.
                                 </Form.Control.Feedback>
                             </Form.Group>
-                            <Button variant="primary" type="submit" className="mt-2" disabled={loading}>
+                            <Button variant="primary" type="submit" className="mt-2" disabled={loading} style={{borderRadius: "2em"}}>
                                 {loading ? "Sending..." : "Send Message"}
                             </Button>
                         </Form>

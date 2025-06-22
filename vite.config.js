@@ -18,6 +18,9 @@ export default defineConfig({
         cssCodeSplit: true, // Enable CSS code splitting
         chunkSizeWarningLimit: 600, // Increase chunk size warning threshold
         assetsInlineLimit: 4096, // Inline small assets for fewer requests
+        target: 'esnext', // Ensure modern JS output for Cloudflare compatibility
+        manifest: true,   // Generate manifest for Cloudflare integrations
+        emptyOutDir: true // Clean output directory before build
     },
     optimizeDeps: {
         include: ['react', 'react-dom'],
@@ -25,4 +28,12 @@ export default defineConfig({
             target: 'esnext', // Use latest JS features for modern browsers
         },
     },
+    // Cloudflare Pages uses SPA fallback
+    server: {
+        fs: {
+            strict: false
+        }
+    },
+    // For Cloudflare Pages, ensure correct base path if deploying to root
+    base: '/',
 })
