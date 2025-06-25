@@ -1,5 +1,5 @@
 import { Card, Col, Container, Row } from 'react-bootstrap'
-import background from '@/assets/background.jpg'
+import background from '@/assets/background.png' // Fallback image
 import { Footer } from '@/components/Footer'
 import projects from '@/assets/portfolio-cards.json'
 import { NavLink } from 'react-router-dom'
