@@ -45,12 +45,6 @@ export default defineConfig({
             target: 'esnext', // Use latest JS features for modern browsers
         },
     },
-    // Cloudflare Pages uses SPA fallback
-    server: {
-        fs: {
-            strict: false
-        }
-    },
     // For Cloudflare Pages, ensure correct base path if deploying to root
     base: './',
 })
