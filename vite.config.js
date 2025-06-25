@@ -21,9 +21,8 @@ const rewriteSlashToIndexHtml = () => {
 
 // https://vite.dev/config/
 export default defineConfig({
-    appType: 'mpa',
-    plugins: [react(), rewriteSlashToIndexHtml()],
-    // base: '/ryanmichaeljones.github.io/',
+    appType: 'spa',
+    plugins: [react()],
     resolve: {
         alias: {
             '@': path.resolve(__dirname, 'src')
@@ -53,5 +52,5 @@ export default defineConfig({
         }
     },
     // For Cloudflare Pages, ensure correct base path if deploying to root
-    base: '/',
+    base: './',
 })
