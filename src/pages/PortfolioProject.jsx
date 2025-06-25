@@ -1,6 +1,6 @@
 import { Col, Container, Row, Image, Badge, Carousel } from "react-bootstrap"
 import { Footer } from "@/components/Footer"
-import image from "@/assets/background.jpg" // Fallback image
+import image from "@/assets/background.png" // Fallback image
 
 export const PortfolioProject = ({ project }) => {
     const {

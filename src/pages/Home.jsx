@@ -1,6 +1,6 @@
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import profile from '@/assets/profile.png'
-import background from '@/assets/background.jpg'
+import background from '@/assets/background.png'
 import { NavLink } from 'react-router-dom'
 
 export const Home = () => (
