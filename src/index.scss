@@ -1,3 +1,6 @@
+// ========================================
+// FONT DEFINITIONS
+// ========================================
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
@@ -26,108 +29,267 @@
     src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-Italic.woff2) format('woff2');
 }
 
+// ========================================
+// VARIABLES
+// ========================================
+$primary-color: #0d7af6;
+$primary-color-rgb: rgb(13, 122, 246);
+$dark-bg: rgba(31, 29, 29, 1);
+$card-bg: rgba(255, 255, 255, 0.07);
+$card-hover-bg: rgba(13, 122, 246, 0.15);
+$white: #fff;
+$gray: gray;
+
+$font-family: 'Poppins', sans-serif;
+$navbar-height: 56px;
+$transition-fast: 0.15s;
+$transition-medium: 0.18s;
+$transition-slow: 0.4s;
+
+$box-shadow-primary: 0 8px 32px 0 rgba($primary-color-rgb, 0.12), 0 1.5px 6px 0 rgba(0, 0, 0, 0.10);
+$box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
+
+// ========================================
+// MIXINS
+// ========================================
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin page-base {
+    height: calc(100% - $navbar-height);
+}
+
+@mixin hover-effect {
+    transition: transform $transition-medium, box-shadow $transition-medium, background $transition-medium;
+    
+    &:hover {
+        background: $card-hover-bg !important;
+        transform: scale(1.02);
+        box-shadow: $box-shadow-primary;
+        border-color: $primary-color !important;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+@mixin text-responsive($min-size, $max-size, $vw-size: 6vw) {
+    font-size: clamp($min-size, $vw-size, $max-size);
+}
+
+// ========================================
+// BASE STYLES
+// ========================================
 #root {
-    font-family: "Poppins", sans-serif;
+    font-family: $font-family;
     line-height: 1.5;
     font-weight: 400;
 
+    // Navigation active state
     .nav-link.active {
         box-shadow: 0;
 
         @media (min-width: 992px) {
-            box-shadow: 0 2px 0 0 #0d7af6;
+            box-shadow: 0 2px 0 0 $primary-color;
         }
     }
 
+    // Base page layouts
     .home,
     .about,
     .portfolio {
-        height: calc(100% - 56px);
+        @include page-base;
+    }
+}
+
+// ========================================
+// HOME PAGE STYLES
+// ========================================
+.home {
+    @include flex-center;
+    
+    // Typography
+    p {
+        font-weight: 400;
+        @include text-responsive(1rem, 1.1rem, 2.2vw);
+        line-height: 1.5;
     }
 
-    .home {
-        p {
-            font-weight: 400;
-            font-size: 1.2em;
-            line-height: 1.2;
-        }
-
-        h1 {
-            font-weight: 800;
-            font-size: 3em;
-        }
-
-        h2 {
-            font-weight: 400;
-            font-size: 1.6em;
-        }
-
-        h3 {
-            font-weight: 400;
-            font-size: 1.5em;
-        }
-
-        h1,
-        h2,
-        h3 {
-            line-height: 1.2;
-        }
-
-        .home-button:hover {
-            background: rgba(13, 122, 246, 0.15) !important;
-            box-shadow: 0 8px 32px 0 rgba(13, 122, 246, 0.12), 0 1.5px 6px 0 rgba(0, 0, 0, 0.10);
-            border-color: #0d7af6 !important;
-            color: #fff;
-            text-decoration: none;
-        }
+    h1 {
+        font-weight: 800;
+        @include text-responsive(2rem, 3rem);
+        line-height: 1.1;
     }
 
-    .about,
-    .portfolio {
-        background-color: rgba(31, 29, 29, 1);
-        overflow-y: auto;
-        scrollbar-gutter: stable both-edges;
-        scrollbar-color: gray rgba(31, 29, 29, 1);
-
-        h1 {
-            font-weight: 600;
-            font-size: 1.3em;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            padding-bottom: 5px;
-        }
-
-        h2 {
-            font-weight: 600;
-            font-size: 1em;
-        }
-
-        h3 {
-            font-weight: 400;
-            font-size: 1em;
-            opacity: 80%;
-        }
-
-        h1,
-        h2,
-        h3 {
-            line-height: 1.2;
-        }
+    h2 {
+        font-weight: 400;
+        @include text-responsive(1.1rem, 1.6rem, 3vw);
+        line-height: 1.2;
     }
 
-    .portfolio {
-        .portfolio-card:hover {
-            background: rgba(13, 122, 246, 0.15) !important;
-            transform: scale(1.02);
-            box-shadow: 0 8px 32px 0 rgba(13, 122, 246, 0.12), 0 1.5px 6px 0 rgba(0, 0, 0, 0.10);
-            border-color: #0d7af6 !important;
-            color: #fff;
-            text-decoration: none;
-        }
+    h3 {
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
 
-        @media (max-width: 576px) {
-            .portfolio-card-img {
-                height: 30vh !important;
-            }
+    // Button hover effect
+    .home-button:hover {
+        background: $card-hover-bg !important;
+        box-shadow: $box-shadow-primary;
+        border-color: $primary-color !important;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+// ========================================
+// CONTENT PAGES (ABOUT & PORTFOLIO) STYLES
+// ========================================
+.about,
+.portfolio {
+    background-color: $dark-bg;
+    overflow-y: auto;
+    scrollbar-gutter: stable both-edges;
+    scrollbar-color: $gray $dark-bg;
+
+    // Typography hierarchy
+    h1 {
+        font-weight: 600;
+        font-size: 1.3em;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 5px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 1em;
+        opacity: 0.8;
+        line-height: 1.2;
+    }
+}
+
+// ========================================
+// PORTFOLIO SPECIFIC STYLES
+// ========================================
+.portfolio {
+    // Portfolio card hover effects
+    .portfolio-card {
+        @include hover-effect;
+    }
+
+    // Responsive image handling
+    @media (max-width: 576px) {
+        .portfolio-card-img {
+            height: 30vh !important;
         }
+    }
+}
+
+// ========================================
+// UTILITY CLASSES
+// ========================================
+.transition-fast {
+    transition: all $transition-fast;
+}
+
+.transition-medium {
+    transition: all $transition-medium;
+}
+
+.transition-slow {
+    transition: all $transition-slow;
+}
+
+.text-primary-color {
+    color: $primary-color;
+}
+
+.bg-primary-color {
+    background-color: $primary-color;
+}
+
+.shadow-primary {
+    box-shadow: $box-shadow-primary;
+}
+
+// ========================================
+// RESPONSIVE BREAKPOINT UTILITIES
+// ========================================
+@media (max-width: 575.98px) {
+    .text-center-mobile {
+        text-align: center !important;
+    }
+    
+    .mb-mobile-4 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .text-sm-start {
+        text-align: left !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-lg-start {
+        text-align: left !important;
+    }
+    
+    .justify-content-lg-end {
+        justify-content: flex-end !important;
+    }
+}
+
+// ========================================
+// ACCESSIBILITY IMPROVEMENTS
+// ========================================
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// Focus visible for better keyboard navigation
+*:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+}
+
+// ========================================
+// PRINT STYLES
+// ========================================
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: ' (' attr(href) ')';
     }
 }

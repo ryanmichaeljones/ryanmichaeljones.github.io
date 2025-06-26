@@ -54,7 +54,6 @@ const PortfolioItem = React.memo(({
                     style={{
                         backgroundColor: COLORS.CARD_BG,
                         color: 'white',
-                        transition: 'transform 0.18s, box-shadow 0.18s, background 0.18s',
                     }}
                 >
                     <Card.Header style={{
