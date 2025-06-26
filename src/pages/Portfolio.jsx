@@ -9,11 +9,11 @@ const CARD_BG = 'rgba(255,255,255,0.07)'
 
 export const Portfolio = () => {
     return (
-        <div className="portfolio">
+        <div className='portfolio'>
             <Container style={{ color: 'white' }}>
-                <Row className="pt-4">
+                <Row className='pt-4'>
                     <Col>
-                        <h1 className="mb-0">My Projects</h1>
+                        <h1 className='mb-0'>My Projects</h1>
                     </Col>
                 </Row>
                 <Row className='mt-n2'>
@@ -46,11 +46,11 @@ const PortfolioItem = ({
             lg={4}
             xl={3}
             xxl={3}
-            className="d-flex align-items-stretch g-3"
+            className='d-flex align-items-stretch g-3'
         >
             <NavLink to={to} style={{ textDecoration: 'none', width: '100%' }}>
                 <Card
-                    className="h-100 shadow-sm portfolio-card"
+                    className='h-100 shadow-sm portfolio-card'
                     style={{
                         backgroundColor: CARD_BG,
                         color: 'white',
@@ -86,10 +86,10 @@ const PortfolioItem = ({
                             }} />
                         )}
                         <Card.Img
-                            className="align-self-center"
+                            className='align-self-center'
                             src={imgSrc}
                             alt={title}
-                            loading="lazy"
+                            loading='lazy'
                             onLoad={() => setImgLoaded(true)}
                             style={{
                                 objectFit: 'cover',
@@ -102,7 +102,7 @@ const PortfolioItem = ({
                     </div>
                     <Card.Body>
                         <Card.Title style={{ fontWeight: 600, fontSize: '1.15em' }}>{title}</Card.Title>
-                        <Card.Text as="div" style={{ fontSize: '1em', opacity: 0.92, minHeight: 48 }}>
+                        <Card.Text as='div' style={{ fontSize: '1em', opacity: 0.92, minHeight: 48 }}>
                             {text}
                         </Card.Text>
                     </Card.Body>
