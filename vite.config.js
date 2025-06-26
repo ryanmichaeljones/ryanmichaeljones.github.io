@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
+import path, { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -8,11 +8,13 @@ export default defineConfig({
     plugins: [react()],
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'src')
+            '@': resolve(__dirname, './src')
         },
     },
+    base: '/',
     build: {
         outDir: 'dist',
+        assetsDir: 'assets',
         sourcemap: false, // Disable sourcemaps for production performance
         minify: 'esbuild', // Use esbuild for faster minification
         cssCodeSplit: true, // Enable CSS code splitting
@@ -20,14 +22,18 @@ export default defineConfig({
         assetsInlineLimit: 4096, // Inline small assets for fewer requests
         target: 'esnext', // Ensure modern JS output for Cloudflare compatibility
         manifest: true,   // Generate manifest for Cloudflare integrations
-        emptyOutDir: true // Clean output directory before build
+        emptyOutDir: true, // Clean output directory before build
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    vendor: ['react', 'react-dom', 'react-router-dom'],
+                    bootstrap: ['react-bootstrap', 'bootstrap']
+                }
+            }
+        }
     },
-    optimizeDeps: {
-        include: ['react', 'react-dom'],
-        esbuildOptions: {
-            target: 'esnext', // Use latest JS features for modern browsers
-        },
-    },
-    // For Cloudflare Pages, ensure correct base path if deploying to root
-    base: './',
+    server: {
+        port: 5173,
+        open: true
+    }
 })
