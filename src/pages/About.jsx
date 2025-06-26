@@ -88,8 +88,16 @@ const SectionCard = ({ title, period, subtitle, description }) => (
     >
         <div className="d-flex justify-content-between align-items-center flex-wrap">
             <h2 className="mb-1" style={{ fontSize: "1.05rem", fontWeight: 600 }}>{title}</h2>
-            <span style={{ fontSize: "0.95em", opacity: 0.85 }}>
-                <em>{period}</em>
+            <span
+              style={{
+                fontSize: "0.95em",
+                opacity: 0.85,
+                minWidth: "80px",
+                display: "inline-block",
+                textAlign: "right"
+              }}
+            >
+              <em>{period}</em>
             </span>
         </div>
         <h3 style={{ fontSize: '0.95em', fontWeight: 400, marginBottom: 5 }}>{subtitle}</h3>
