@@ -94,8 +94,7 @@ const PortfolioItem = React.memo(({
                                 objectFit: 'cover',
                                 height: '11vh',
                                 width: '100%',
-                                opacity: imgLoaded ? 1 : 0,
-                                transition: 'opacity 0.4s'
+                                opacity: imgLoaded ? 1 : 0
                             }}
                         />
                     </div>
