@@ -1,20 +1,26 @@
 [
     {
+        "title": "Math Team Lead",
+        "company": "Playtech",
+        "period": "October 2025 - Present",
+        "description": "Lead a team of developers, providing technical guidance and mentorship on game mathematics. Oversee math design and balancing across multiple game projects. Manage web-based simulator and prototype tooling while driving technical decisions and best practices for the team."
+    },
+    {
         "title": "Game Developer",
         "company": "Playtech",
-        "period": "September 2023 - Present",
-        "description": "I continue to be involved in the same tasks as well as having further responsibilities. More emphasise on the success of the studio and how I can impact this success. I've been math lead in a number of game projects, designing the logic and producing successful math balances. Taken ownership of our web process, developing and maintaining our simulator and prototype tooling. Helped to train a newly recruited junior developer in our processes."
+        "period": "September 2023 - September 2025",
+        "description": "Served as math lead on multiple game projects, designing game logic and producing balanced gaming experiences. Developed and maintained web-based simulator and prototype tooling. Mentored junior developers and collaborated across teams to ensure project success."
     },
     {
         "title": "Junior Developer",
         "company": "Playtech",
         "period": "October 2021 - August 2023",
-        "description": "Producing simulators to generate math reports and prototypes to aid in balancing the game math. Learnt various technical skills in this role as well as becoming proficient in C# and JavaScript languages. Took ownership of our transition to a new development process which migrated our tooling to a web server instead of locally."
+        "description": "Developed simulators to generate math reports and prototypes for game balance optimization. Gained proficiency in C# and JavaScript while contributing to development projects. Led the migration of development tooling from local environments to web servers, improving team workflow."
     },
     {
         "title": "Kitchen Porter",
         "company": "The Bell Inn",
         "period": "October 2016 - January 2020",
-        "description": "Completed jobs such as cleaning, washing up and unloading deliveries while working under pressure and supporting others in a team role."
+        "description": "Maintained high standards in fast-paced kitchen operations, managing cleaning and inventory tasks. Demonstrated strong teamwork and reliability while working under pressure during peak hours. Supported kitchen staff and contributed to overall restaurant efficiency through proactive assistance and attention to detail."
     }
 ]
