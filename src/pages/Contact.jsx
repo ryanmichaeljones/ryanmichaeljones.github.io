@@ -1,5 +1,5 @@
 import { Button, Col, Container, Form, Row, Alert } from 'react-bootstrap'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components'
 import { useContactForm } from '@/hooks/useContactForm'
 
 export const Contact = () => {

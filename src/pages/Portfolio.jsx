@@ -1,6 +1,6 @@
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import background from '@/assets/background.png'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components'
 import projects from '@/assets/portfolio-cards.json'
 import { NavLink } from 'react-router-dom'
 import { useImageLoader } from '@/hooks/useImageLoader'

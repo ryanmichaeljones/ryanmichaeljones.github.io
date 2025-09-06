@@ -1,12 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Home } from '@/pages/Home'
-import { LayoutTop } from '@/components/LayoutTop'
-import { About } from '@/pages/About'
-import { Portfolio } from '@/pages/Portfolio'
-import { Contact } from '@/pages/Contact'
-import { PortfolioProject } from '@/pages/PortfolioProject'
-import { Resume } from '@/pages/Resume'
-import { NotFound } from '@/pages/NotFound'
+import { Home, About, Portfolio, Contact, PortfolioProject, Resume, NotFound } from '@/pages'
+import { LayoutTop } from '@/components'
 import projects from '@/assets/portfolio-projects.json'
 
 export default function App() {

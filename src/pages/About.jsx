@@ -1,7 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
-import { Footer } from '@/components/Footer'
-import { SkillProgressBar } from '@/components/ProgressBar'
-import { SectionCard } from '@/components/common/SectionCard'
+import { Footer, SkillProgressBar, SectionCard } from '@/components'
 import educationData from '@/assets/about-education.json'
 import experienceData from '@/assets/about-experience.json'
 import skillsData from '@/assets/about-skills.json'
@@ -18,14 +16,14 @@ export const About = () => {
                     <Col xs={12}>
                         <h1>Overview</h1>
                         <p className='mb-2'>
-                            Hi, I am Ryan!
-                            I am a responsible and highly motivated BSc Games Software Engineering graduate of Bournemouth University.
-                            Currently I am employed as a game developer at Playtech for the Ash studio which specialises in online gambling slot games.
-                            I have a passion for programming which drives me to adapt and solve problems to reach the desired outcome.
-                            When I'm not developing games, I enjoy spending time going to the gym and playing strategy games.
+                            Hi, I'm Ryan!
+                            I'm a passionate BSc Games Software Engineering graduate from Bournemouth University with a strong foundation in problem-solving and software development.
+                            Currently, I serve as Math Team Lead at Playtech's Ash studio, where I specialize in developing mathematics for online gambling slot games.
+                            My enthusiasm for programming drives me to continuously learn new technologies and tackle complex challenges to deliver exceptional results.
+                            Outside of work, I maintain an active lifestyle through going to the gym and enjoy playing strategy games.
                         </p>
                         <p>
-                            I hope you enjoy looking through my portfolio and don't hesitate to get in touch with me!
+                            I'm excited to share my projects and experiences with you through this portfolio. Feel free to reach out if you'd like to connect or discuss potential opportunities!
                         </p>
                     </Col>
                 </Row>

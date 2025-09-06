@@ -1,6 +1,5 @@
 import { Col, Container, Row, Image, Badge, Carousel } from 'react-bootstrap'
-import { Footer } from '@/components/Footer'
-import { Section } from '@/components/common/Section'
+import { Footer, Section } from '@/components'
 import image from '@/assets/background.png'
 import { COLORS } from '@/constants'
 

@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components'
 import { NavLink } from 'react-router-dom'
 
 export const NotFound = () => (
