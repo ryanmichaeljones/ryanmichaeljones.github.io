@@ -28,8 +28,7 @@ export default defineConfig({
                 manualChunks: {
                     vendor: ['react', 'react-dom', 'react-router-dom'],
                     bootstrap: ['react-bootstrap', 'bootstrap'],
-                    mui: ['@mui/icons-material/AlternateEmail', '@mui/icons-material/Phone', '@mui/icons-material/LinkedIn', '@mui/icons-material/GitHub'],
-                    data: ['@/assets/portfolio-projects.json', '@/assets/about-education.json', '@/assets/about-experience.json']
+                    mui: ['@mui/icons-material/AlternateEmail', '@mui/icons-material/Phone', '@mui/icons-material/LinkedIn', '@mui/icons-material/GitHub']
                 }
             }
         }
