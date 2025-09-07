@@ -5,28 +5,28 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-Regular.woff2) format('woff2');
+    src: local('Poppins'), url(/fonts/Poppins/Poppins-Regular.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-SemiBold.woff2) format('woff2');
+    src: local('Poppins'), url(/fonts/Poppins/Poppins-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
-    src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-ExtraBold.woff2) format('woff2');
+    src: local('Poppins'), url(/fonts/Poppins/Poppins-ExtraBold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-style: italic;
     font-weight: 400;
-    src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-Italic.woff2) format('woff2');
+    src: local('Poppins'), url(/fonts/Poppins/Poppins-Italic.woff2) format('woff2');
 }
 
 // ========================================
