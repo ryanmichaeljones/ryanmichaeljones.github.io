@@ -19,7 +19,7 @@ export default defineConfig({
         minify: 'esbuild', // Use esbuild for faster minification
         cssCodeSplit: true, // Enable CSS code splitting
         chunkSizeWarningLimit: 600, // Increase chunk size warning threshold
-        assetsInlineLimit: 4096, // Inline small assets for fewer requests
+        assetsInlineLimit: 8192, // Increase from 4096 to inline more small assets
         target: 'esnext', // Ensure modern JS output for Cloudflare compatibility
         manifest: true,   // Generate manifest for Cloudflare integrations
         emptyOutDir: true, // Clean output directory before build
@@ -27,7 +27,9 @@ export default defineConfig({
             output: {
                 manualChunks: {
                     vendor: ['react', 'react-dom', 'react-router-dom'],
-                    bootstrap: ['react-bootstrap', 'bootstrap']
+                    bootstrap: ['react-bootstrap', 'bootstrap'],
+                    mui: ['@mui/icons-material/AlternateEmail', '@mui/icons-material/Phone', '@mui/icons-material/LinkedIn', '@mui/icons-material/GitHub'],
+                    data: ['@/assets/portfolio-projects.json', '@/assets/about-education.json', '@/assets/about-experience.json']
                 }
             }
         }
