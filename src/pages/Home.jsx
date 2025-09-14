@@ -38,7 +38,7 @@ export const Home = () => (
                             lineHeight: 1.2
                         }}
                     >
-                        Game Developer & Software Engineer
+                        Game Developer & Software Engineer.
                     </h2>
                     <p
                         style={{
