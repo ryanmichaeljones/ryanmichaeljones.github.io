@@ -73,12 +73,33 @@ export const Home = () => (
                     </Button>
                 </Col>
                 <Col xs={12} lg={4} className='d-flex justify-content-center justify-content-lg-end mb-4 mb-lg-0'>
-                    <Image
-                        src={profile}
-                        roundedCircle
-                        alt='Ryan Jones'
-                        style={{ height: 'auto', width: '15vw', minWidth: '200px' }}
-                    />
+                    <div style={{ position: 'relative' }}>
+                        <div 
+                            style={{
+                                position: 'absolute',
+                                width: '100%',
+                                height: '100%',
+                                filter: 'blur(35px) brightness(1.5)',
+                                transform: 'scale(1.15, 1.05)',
+                                opacity: 0.7,
+                                background: `url(${profile}) no-repeat center center`,
+                                backgroundSize: 'contain',
+                                zIndex: 1
+                            }}
+                        />
+                        <Image
+                            src={profile}
+                            roundedCircle
+                            alt='Ryan Jones'
+                            style={{ 
+                                height: 'auto', 
+                                width: '15vw', 
+                                minWidth: '200px',
+                                position: 'relative',
+                                zIndex: 2
+                            }}
+                        />
+                    </div>
                 </Col>
             </Row>
         </Container>
