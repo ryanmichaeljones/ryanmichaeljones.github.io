@@ -4,37 +4,54 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
-  { ignores: ['dist', 'node_modules', 'build'] },
-  {
-    files: ['**/*.{js,jsx}'],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
-      parserOptions: {
-        ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
-        sourceType: 'module',
-      },
+    { ignores: ['dist', 'node_modules', 'build', 'scripts'] },
+    {
+        files: ['**/*.{js,jsx}'],
+        languageOptions: {
+            ecmaVersion: 2020,
+            globals: globals.browser,
+            parserOptions: {
+                ecmaVersion: 'latest',
+                ecmaFeatures: { jsx: true },
+                sourceType: 'module',
+            },
+        },
+        plugins: {
+            'react-hooks': reactHooks,
+            'react-refresh': reactRefresh,
+        },
+        rules: {
+            ...js.configs.recommended.rules,
+            ...reactHooks.configs.recommended.rules,
+            'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+            'react-refresh/only-export-components': [
+                'warn',
+                { allowConstantExport: true },
+            ],
+            'eqeqeq': ['error', 'always'],
+            'no-console': ['warn', { allow: ['warn', 'error'] }],
+            'no-debugger': 'error',
+            'react-hooks/exhaustive-deps': 'warn',
+            'semi': ['error', 'never'],
+            'quotes': ['error', 'single'],
+            'indent': ['error', 4, { SwitchCase: 1 }],
+        },
     },
-    plugins: {
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
+    {
+        files: ['src/tests/**/*.{js,jsx}'],
+        languageOptions: {
+            globals: {
+                ...globals.node,
+                describe: 'readonly',
+                it: 'readonly',
+                expect: 'readonly',
+                beforeEach: 'readonly',
+                afterEach: 'readonly',
+                vi: 'readonly',
+            },
+        },
+        rules: {
+            'no-console': 'off',
+        },
     },
-    rules: {
-      ...js.configs.recommended.rules,
-      ...reactHooks.configs.recommended.rules,
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
-      'eqeqeq': ['error', 'always'],
-      'no-console': ['warn', { allow: ['warn', 'error'] }],
-      'no-debugger': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
-      'semi': ['error', 'never'],
-      'quotes': ['error', 'single'],
-      'indent': ['error', 4, { SwitchCase: 1 }],
-    },
-  },
 ]
