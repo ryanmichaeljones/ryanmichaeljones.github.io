@@ -1,4 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
+import { useMemo } from 'react'
 import { Footer, SkillProgressBar, SectionCard } from '@/components'
 import educationData from '@/assets/about-education.json'
 import experienceData from '@/assets/about-experience.json'
@@ -7,7 +8,11 @@ import { groupBy } from '@/utils/GroupBy'
 import { SKILLS_PER_COLUMN } from '@/constants'
 
 export const About = () => {
-    const skillColData = groupBy(skillsData, (_, i) => Math.floor(i / SKILLS_PER_COLUMN))
+    // Memoize expensive groupBy calculation
+    const skillColData = useMemo(
+        () => groupBy(skillsData, (_, i) => Math.floor(i / SKILLS_PER_COLUMN)),
+        []
+    )
 
     return (
         <div className='about'>

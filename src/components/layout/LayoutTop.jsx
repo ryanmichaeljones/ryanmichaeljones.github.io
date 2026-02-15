@@ -17,9 +17,8 @@ export const LayoutTop = () => {
     return (
         <Navbar
             expand='lg'
-            sticky='top'
             data-bs-theme='dark'
-            style={{ backgroundColor: 'rgb(15, 14, 14)' }}
+            style={{ backgroundColor: 'rgb(15, 14, 14)', flexShrink: 0 }}
             expanded={expanded}
             onToggle={handleToggle}
             role='navigation'

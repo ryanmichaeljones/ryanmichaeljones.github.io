@@ -82,7 +82,44 @@ $box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
 // ========================================
 // BASE STYLES
 // ========================================
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    main {
+        flex: 1;
+        overflow-y: auto;
+        scrollbar-color: $gray $dark-bg;
+        
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: $dark-bg;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: $gray;
+            border-radius: 6px;
+            
+            &:hover {
+                background: lighten($gray, 10%);
+            }
+        }
+    }
+}
+
 #root {
+    height: 100%;
     font-family: $font-family;
     line-height: 1.5;
     font-weight: 400;
@@ -94,13 +131,6 @@ $box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
         @media (min-width: 992px) {
             box-shadow: 0 2px 0 0 $primary-color;
         }
-    }
-
-    // Base page layouts
-    .home,
-    .about,
-    .portfolio {
-        @include page-base;
     }
 }
 
@@ -149,11 +179,10 @@ $box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
 // CONTENT PAGES (ABOUT & PORTFOLIO) STYLES
 // ========================================
 .about,
-.portfolio {
+.portfolio,
+.contact {
     background-color: $dark-bg;
-    overflow-y: auto;
-    scrollbar-gutter: stable both-edges;
-    scrollbar-color: $gray $dark-bg;
+    min-height: 100%;
 
     // Typography hierarchy
     h1 {
@@ -192,6 +221,24 @@ $box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
         .portfolio-card-img {
             height: 30vh !important;
         }
+    }
+}
+
+// ========================================
+// RESUME PAGE STYLES
+// ========================================
+.resume {
+    background-color: $dark-bg;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    object {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 }
 
@@ -254,6 +301,27 @@ $box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
 // ========================================
 // ACCESSIBILITY IMPROVEMENTS
 // ========================================
+
+// Skip to content link for keyboard navigation
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: $primary-color;
+    color: $white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+    z-index: 9999;
+    font-weight: 600;
+    
+    &:focus {
+        top: 0;
+        outline: 2px solid $white;
+        outline-offset: 2px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -263,10 +331,34 @@ $box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
     }
 }
 
-// Focus visible for better keyboard navigation
+// Enhanced focus visible for better keyboard navigation
 *:focus-visible {
     outline: 2px solid $primary-color;
     outline-offset: 2px;
+    border-radius: 2px;
+}
+
+// Ensure interactive elements have visible focus
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+}
+
+// Screen reader only class
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 // ========================================

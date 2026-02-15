@@ -1,0 +1,98 @@
+@import '../../index.scss';
+
+.portfolioItem {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.cardLink {
+    text-decoration: none;
+    width: 100%;
+}
+
+.card {
+    color: white;
+}
+
+.cardHeader {
+    background: transparent;
+    border-bottom: 0;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 0.01em;
+}
+
+.imageContainer {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    position: relative;
+}
+
+.loadingSpinner {
+    width: 100%;
+    height: 100%;
+    background: $card-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cardImage {
+    object-fit: cover;
+    height: 11vh;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+
+    &.loaded {
+        opacity: 1;
+    }
+
+    &.loading {
+        opacity: 0;
+    }
+}
+
+.cardTitle {
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+.cardText {
+    font-size: 1em;
+    opacity: 0.92;
+    min-height: 48px;
+}
+
+.cardFooter {
+    background: transparent;
+    border-top: 1px solid $card-bg;
+    font-size: 0.95em;
+    opacity: 0.8;
+}

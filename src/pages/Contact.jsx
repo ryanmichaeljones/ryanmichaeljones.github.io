@@ -14,7 +14,7 @@ export const Contact = () => {
     } = useContactForm()
 
     return (
-        <div className='portfolio'>
+        <div className='contact'>
             <Container style={{ color: 'white' }}>
                 <Row className='pt-4'>
                     <Col>
