@@ -1,6 +1,7 @@
 import { Button, Col, Container, Form, Row, Alert } from 'react-bootstrap'
 import { Footer } from '@/components'
 import { useContactForm } from '@/hooks/useContactForm'
+import styles from '@/styles/pages.module.scss'
 
 export const Contact = () => {
     const {
@@ -14,12 +15,12 @@ export const Contact = () => {
     } = useContactForm()
 
     return (
-        <div className='contact'>
-            <Container style={{ color: 'white' }}>
+        <div className={styles.contentPage}>
+            <Container>
                 <Row className='pt-4'>
                     <Col>
                         <h1>Contact Me</h1>
-                        <p style={{ opacity: 0.85 }}>Feel free to reach out using the form below!</p>
+                        <p className={styles.contactSubtitle}>Feel free to reach out using the form below!</p>
                     </Col>
                 </Row>
                 <Row>
@@ -105,21 +106,20 @@ export const Contact = () => {
                             <Button 
                                 variant='primary' 
                                 type='submit' 
-                                className='mt-2' 
+                                className={`mt-2 ${styles.submitButton}`}
                                 disabled={loading} 
-                                style={{ borderRadius: '2em' }}
                             >
                                 {loading ? 'Sending...' : 'Send Message'}
                             </Button>
                         </Form>
                         <div className='mt-4'>
-                            <p style={{ opacity: 0.85 }}>
+                            <p className={styles.contactSubtitle}>
                                 Interested in hiring and want to know more? &nbsp;
                                 <a
                                     href='/resume'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    style={{ textDecoration: 'underline', color: '#fff' }}
+                                    className={styles.resumeLink}
                                 >
                                     View my resume
                                 </a>

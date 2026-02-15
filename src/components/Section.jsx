@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from '@/styles/components.module.scss'
 
 export const Section = React.memo(({ title, children }) => (
-    <section className='mb-3'>
-        <h2 style={{ fontSize: '1em' }}>{title}</h2>
+    <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>{title}</h2>
         {children}
     </section>
 ))

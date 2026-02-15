@@ -6,6 +6,7 @@ import experienceData from '@/assets/about-experience.json'
 import skillsData from '@/assets/about-skills.json'
 import { groupBy } from '@/utils/GroupBy'
 import { SKILLS_PER_COLUMN } from '@/constants'
+import styles from '@/styles/pages.module.scss'
 
 export const About = () => {
     // Memoize expensive groupBy calculation
@@ -15,8 +16,8 @@ export const About = () => {
     )
 
     return (
-        <div className='about'>
-            <Container style={{ color: 'white' }}>
+        <div className={styles.contentPage}>
+            <Container>
                 <Row className='pt-4'>
                     <Col xs={12}>
                         <h1>Overview</h1>

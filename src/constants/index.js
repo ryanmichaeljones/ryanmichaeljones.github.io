@@ -7,15 +7,6 @@ export const BREAKPOINTS = {
     XXL: 3
 }
 
-export const COLORS = {
-    PRIMARY: '#0d7af6',
-    PRIMARY_RGB: '13, 122, 246',
-    WHITE: '#fff',
-    DARK_BG: 'rgba(31, 29, 29, 1)',
-    CARD_BG: 'rgba(255,255,255,0.07)',
-    SECTION_CARD_BG: 'rgba(20, 30, 50, 0.85)'
-}
-
 export const NAV_LINKS = [
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },

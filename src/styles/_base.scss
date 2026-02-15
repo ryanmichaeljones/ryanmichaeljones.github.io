@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+// ========================================
+// BASE STYLES
+// ========================================
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    main {
+        flex: 1;
+        overflow-y: auto;
+        scrollbar-color: $gray $dark-bg;
+        
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: $dark-bg;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: $gray;
+            border-radius: 6px;
+            
+            &:hover {
+                background: $gray-light;
+            }
+        }
+    }
+}
+
+#root {
+    height: 100%;
+    font-family: $font-family;
+    line-height: 1.5;
+    font-weight: 400;
+
+    .nav-link.active {
+        box-shadow: 0;
+
+        @media (min-width: 992px) {
+            box-shadow: 0 2px 0 0 $primary-color;
+        }
+    }
+}

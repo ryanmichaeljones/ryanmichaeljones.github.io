@@ -11,6 +11,13 @@ export default defineConfig({
             '@': resolve(__dirname, './src')
         },
     },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                loadPaths: [resolve(__dirname, './src/styles')]
+            }
+        }
+    },
     base: '/',
     build: {
         outDir: 'dist',

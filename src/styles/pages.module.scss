@@ -1,0 +1,236 @@
+@use 'variables' as *;
+
+// ========================================
+// HOME
+// ========================================
+.home {
+    @include flex-center;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    min-height: 100%;
+
+    p {
+        font-weight: 400;
+        @include text-responsive(1rem, 1.1rem, 2.2vw);
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-weight: 800;
+        @include text-responsive(2rem, 3rem);
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-weight: 400;
+        @include text-responsive(1.1rem, 1.6rem, 3vw);
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+}
+
+.homeContainer {
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+}
+
+.heroRow {
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.textColumn {
+    text-align: center;
+
+    @media (min-width: 992px) {
+        text-align: start;
+    }
+}
+
+.imageColumn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 992px) {
+        justify-content: end;
+        margin-bottom: 0;
+    }
+}
+
+.heroTitle {
+    font-weight: 700;
+    color: $primary-color;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.1;
+}
+
+.homeSubtitle {
+    font-weight: 400;
+    color: $white;
+    opacity: 0.85;
+    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    line-height: 1.2;
+}
+
+.homeDescription {
+    font-size: clamp(1rem, 2.2vw, 1.1rem);
+    color: #b3b3b3;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+    font-weight: 600;
+    background: linear-gradient(90deg, $primary-color 0%, rgb(46, 110, 184) 100%);
+    border: none;
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    padding: 0.7em 2.3em;
+    border-radius: 2em;
+    box-shadow: $box-shadow-button;
+    color: $white;
+    letter-spacing: 0.03em;
+    transition: transform $transition-fast, box-shadow $transition-fast, background $transition-fast;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 32px rgba($primary-color-rgb, 0.25);
+        background: linear-gradient(90deg, rgb(46, 110, 184) 0%, $primary-color 100%);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+// ========================================
+// CONTENT PAGES (About, Portfolio, Contact, PortfolioProject)
+// ========================================
+.contentPage {
+    @include content-page;
+}
+
+// ========================================
+// PORTFOLIO
+// ========================================
+.portfolioCard {
+    @include hover-effect;
+}
+
+.portfolioCardImg {
+    @media (max-width: 576px) {
+        height: 30vh !important;
+    }
+}
+
+// ========================================
+// PORTFOLIO PROJECT
+// ========================================
+.carousel {
+    border: 2px solid $white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.projectImage {
+    object-fit: cover;
+    height: 45vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectLink {
+    color: $primary-color;
+    
+    &:hover {
+        color: $primary-color-light;
+    }
+}
+
+// ========================================
+// CONTACT
+// ========================================
+.submitButton {
+    border-radius: 2em;
+    
+    &:disabled {
+        opacity: 0.7;
+    }
+}
+
+.resumeLink {
+    text-decoration: underline;
+    color: $white;
+    
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.contactSubtitle {
+    opacity: 0.85;
+}
+
+// ========================================
+// RESUME
+// ========================================
+.resume {
+    background-color: $dark-bg;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    object {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
+.resumeFallback {
+    color: $white;
+    padding: 2rem;
+    text-align: center;
+    
+    a {
+        color: $primary-color;
+        text-decoration: underline;
+        
+        &:hover {
+            color: $primary-color-light;
+        }
+    }
+}
+
+// ========================================
+// NOT FOUND
+// ========================================
+.notFound {
+    background-color: $dark-bg;
+    min-height: 100%;
+    color: $white;
+}
+
+.notFoundHeading {
+    font-weight: 600;
+    font-size: 2em;
+    color: $primary-color;
+}
+
+.homeLink {
+    color: $primary-color;
+    text-decoration: underline;
+    
+    &:hover {
+        color: $primary-color-light;
+    }
+}

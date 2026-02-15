@@ -3,13 +3,14 @@ import { Footer } from '@/components'
 import { PortfolioItem } from '@/components/portfolio'
 import projects from '@/assets/portfolio-cards.json'
 import { useStaggeredReveal } from '@/hooks/useStaggeredReveal'
+import styles from '@/styles/pages.module.scss'
 
 export const Portfolio = () => {
     const visibleItems = useStaggeredReveal(projects.length, 100)
 
     return (
-        <div className='portfolio'>
-            <Container style={{ color: 'white' }}>
+        <div className={styles.contentPage}>
+            <Container>
                 <Row className='pt-4'>
                     <Col>
                         <h1 className='mb-0'>My Projects</h1>

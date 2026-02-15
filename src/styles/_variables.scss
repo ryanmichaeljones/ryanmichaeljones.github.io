@@ -1,0 +1,84 @@
+// ========================================
+// DESIGN TOKENS & MIXINS
+// Single source of truth for all styles
+// ========================================
+
+// Colors
+$primary-color: #0d7af6;
+$primary-color-rgb: rgb(13, 122, 246);
+$primary-color-light: #4a9df8;
+$dark-bg: rgba(31, 29, 29, 1);
+$card-bg: rgba(255, 255, 255, 0.07);
+$card-hover-bg: rgba(13, 122, 246, 0.15);
+$white: #fff;
+$gray: gray;
+$gray-light: #a0a0a0;
+
+// Typography
+$font-family: 'Poppins', sans-serif;
+
+// Layout
+$navbar-height: 56px;
+
+// Transitions
+$transition-fast: 0.15s;
+$transition-medium: 0.18s;
+$transition-slow: 0.4s;
+
+// Shadows
+$box-shadow-primary: 0 8px 32px 0 rgba($primary-color-rgb, 0.12), 0 1.5px 6px 0 rgba(0, 0, 0, 0.10);
+$box-shadow-button: 0 4px 24px rgba($primary-color-rgb, 0.18);
+
+// ========================================
+// MIXINS
+// ========================================
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hover-effect {
+    transition: transform $transition-medium, box-shadow $transition-medium, background $transition-medium;
+    
+    &:hover {
+        background: $card-hover-bg !important;
+        transform: scale(1.02);
+        box-shadow: $box-shadow-primary;
+        border-color: $primary-color !important;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+@mixin text-responsive($min-size, $max-size, $vw-size: 6vw) {
+    font-size: clamp($min-size, $vw-size, $max-size);
+}
+
+// Shared content page base (About, Portfolio, Contact, PortfolioProject)
+@mixin content-page {
+    background-color: $dark-bg;
+    color: $white;
+    min-height: 100%;
+
+    h1 {
+        font-weight: 600;
+        font-size: 1.3em;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 5px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 1em;
+        opacity: 0.8;
+        line-height: 1.2;
+    }
+}

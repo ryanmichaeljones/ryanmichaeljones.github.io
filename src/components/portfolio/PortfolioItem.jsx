@@ -4,7 +4,7 @@ import { useImageLoader } from '@/hooks/useImageLoader'
 import { BREAKPOINTS } from '@/constants'
 import background from '@/assets/background.png'
 import React, { useState, useEffect } from 'react'
-import styles from './PortfolioItem.module.scss'
+import styles from '@/styles/components.module.scss'
 
 export const PortfolioItem = React.memo(({
     to,
@@ -42,14 +42,14 @@ export const PortfolioItem = React.memo(({
             className={`d-flex align-items-stretch g-3 ${styles.portfolioItem} ${showContent ? styles.visible : ''}`}
         >
             <NavLink to={to} className={styles.cardLink}>
-                <Card className={`h-100 shadow-sm portfolio-card ${styles.card}`} data-bs-theme="dark" style={{ backgroundColor: '#1a1f2e', borderColor: 'rgba(255, 255, 255, 0.08)' }}>
+                <Card className={`h-100 shadow-sm ${styles.card}`} data-bs-theme="dark" style={{ backgroundColor: '#1a1f2e', borderColor: 'rgba(255, 255, 255, 0.08)' }}>
                     <Card.Header className={styles.cardHeader}>
                         {header}
                     </Card.Header>
-                    <div className={styles.imageContainer}>
+                    <div className={styles.cardImageContainer}>
                         {!imgLoaded && !error && isVisible && (
-                            <div className={styles.loadingSpinner}>
-                                <div className={styles.spinner} />
+                            <div className={styles.cardLoadingSpinner}>
+                                <div className={styles.cardSpinner} />
                             </div>
                         )}
                         {isVisible && (

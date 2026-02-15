@@ -1,0 +1,64 @@
+@use 'variables' as *;
+
+// ========================================
+// ACCESSIBILITY
+// ========================================
+
+// Skip to content link for keyboard navigation
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: $primary-color;
+    color: $white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+    z-index: 9999;
+    font-weight: 600;
+    
+    &:focus {
+        top: 0;
+        outline: 2px solid $white;
+        outline-offset: 2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// Enhanced focus visible for better keyboard navigation
+*:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+// Ensure interactive elements have visible focus
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+}
+
+// Screen reader only class
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

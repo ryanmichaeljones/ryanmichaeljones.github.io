@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Alert, Button } from 'react-bootstrap'
+import styles from '@/styles/components.module.scss'
 
 export class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -18,7 +19,7 @@ export class ErrorBoundary extends React.Component {
     render() {
         if (this.state.hasError) {
             return (
-                <Container className='py-5' style={{ color: 'white', minHeight: '50vh' }}>
+                <Container className={styles.errorContainer}>
                     <Row className='justify-content-center'>
                         <Col md={8} lg={6}>
                             <Alert variant='danger'>

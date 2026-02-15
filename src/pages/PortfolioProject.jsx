@@ -1,7 +1,7 @@
 import { Col, Container, Row, Image, Badge, Carousel } from 'react-bootstrap'
 import { Footer, Section } from '@/components'
 import image from '@/assets/background.png'
-import { COLORS } from '@/constants'
+import styles from '@/styles/pages.module.scss'
 
 export const PortfolioProject = ({ project }) => {
     const {
@@ -21,25 +21,14 @@ export const PortfolioProject = ({ project }) => {
                     src={image}
                     alt='Project fallback'
                     fluid
-                    className='portfolio-card-img'
-                    style={{
-                        objectFit: 'cover',
-                        height: '45vh',
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto'
-                    }}
+                    className={`${styles.portfolioCardImg} ${styles.projectImage}`}
                 />
             )
         }
 
         return (
             <Carousel
-                style={{
-                    border: `2px solid ${COLORS.WHITE}`,
-                    borderRadius: '10px',
-                    overflow: 'hidden',
-                }}
+                className={styles.carousel}
                 controls={images.length > 1}
                 indicators={images.length > 1}
             >
@@ -49,14 +38,9 @@ export const PortfolioProject = ({ project }) => {
                             src={img.src || image}
                             alt={img.alt || `${title} screenshot ${idx + 1}`}
                             fluid
-                            className='portfolio-card-img'
-                            style={{
-                                objectFit: 'cover',
-                                height: '45vh',
-                                display: 'block',
-                                marginLeft: 'auto',
-                                marginRight: 'auto'
-                            }}
+                            className={`${styles.portfolioCardImg} ${styles.projectImage}`}
+                            loading='lazy'
+                            decoding='async'
                         />
                     </Carousel.Item>
                 ))}
@@ -65,8 +49,8 @@ export const PortfolioProject = ({ project }) => {
     }
 
     return (
-        <div className='portfolio'>
-            <Container style={{ color: 'white' }}>
+        <div className={styles.contentPage}>
+            <Container>
                 <Row className='pt-4'>
                     <Col xs={12}>
                         <h1>{title}</h1>
@@ -104,7 +88,7 @@ export const PortfolioProject = ({ project }) => {
                                                 href={link.url}
                                                 target='_blank'
                                                 rel='noopener noreferrer'
-                                                style={{ color: COLORS.PRIMARY }}
+                                                className={styles.projectLink}
                                             >
                                                 {link.label}
                                             </a>

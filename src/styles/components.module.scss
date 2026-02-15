@@ -1,0 +1,260 @@
+@use 'variables' as *;
+
+// ========================================
+// LAYOUT - Navbar
+// ========================================
+.navbar {
+    background-color: rgb(15, 14, 14);
+    flex-shrink: 0;
+}
+
+.brandHighlight {
+    color: $primary-color;
+}
+
+// ========================================
+// LAYOUT - Footer
+// ========================================
+.footer {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 0.75rem;
+    opacity: 0.6;
+}
+
+.iconLink {
+    color: $white;
+    text-decoration: none;
+    
+    &:hover {
+        color: $primary-color;
+        transition: color $transition-fast;
+    }
+}
+
+.icon {
+    font-size: 32px;
+}
+
+// ========================================
+// LAYOUT - Error Boundary
+// ========================================
+.errorContainer {
+    color: $white;
+    min-height: 50vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+// ========================================
+// COMMON - Loading Spinner
+// ========================================
+.spinnerContainer {
+    @include flex-center;
+    height: 80vh;
+    color: $white;
+}
+
+// ========================================
+// HOME - Profile Image
+// ========================================
+.profileContainer {
+    position: relative;
+}
+
+.blurEffect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(35px) brightness(1.5);
+    transform: scale(1.15, 1.05);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.profileImage {
+    height: auto;
+    width: 15vw;
+    min-width: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+// ========================================
+// PORTFOLIO - Portfolio Item (card)
+// ========================================
+.portfolioItem {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.cardLink {
+    text-decoration: none;
+    width: 100%;
+}
+
+.card {
+    color: white;
+    @include hover-effect;
+}
+
+.cardHeader {
+    background: transparent;
+    border-bottom: 0;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 0.01em;
+}
+
+.cardImageContainer {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    position: relative;
+}
+
+.cardLoadingSpinner {
+    width: 100%;
+    height: 100%;
+    background: $card-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardSpinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cardImage {
+    object-fit: cover;
+    height: 11vh;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+
+    &.loaded {
+        opacity: 1;
+    }
+
+    &.loading {
+        opacity: 0;
+    }
+}
+
+.cardTitle {
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+.cardText {
+    font-size: 1em;
+    opacity: 0.92;
+    min-height: 48px;
+}
+
+.cardFooter {
+    background: transparent;
+    border-top: 1px solid $card-bg;
+    font-size: 0.95em;
+    opacity: 0.8;
+}
+
+// ========================================
+// SECTION
+// ========================================
+.section {
+    margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+    font-size: 1em;
+}
+
+// ========================================
+// SECTION CARD
+// ========================================
+.sectionCard {
+    background: rgba(20, 30, 50, 0.85);
+    border-left: 5px solid $primary-color;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.sectionCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sectionCardTitle {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.sectionCardPeriod {
+    font-size: 0.95em;
+    min-width: 80px;
+    display: inline-block;
+    text-align: right;
+}
+
+.sectionCardSubtitle {
+    font-size: 0.95em;
+    font-weight: 400;
+    margin-bottom: 5px;
+    opacity: 1;
+}
+
+.sectionCardDescription {
+    font-size: 0.92em;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+// ========================================
+// PROGRESS BAR
+// ========================================
+.progressWrapper {
+    margin-bottom: 0.25rem;
+}
+
+.progressLabel {
+    font-weight: 500;
+    margin-bottom: 1px;
+    font-size: 0.9em;
+}
+
+.progressBar {
+    border: 1px solid $white;
+    background: rgba(255, 255, 255, 0.08);
+    height: 18px;
+}
