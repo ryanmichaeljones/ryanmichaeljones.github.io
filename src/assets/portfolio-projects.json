@@ -6,15 +6,15 @@
         "period": "2021",
         "images": [
             {
-                "src": "/images/portfolio-content/1-dissertation/dissertation-1.png",
+                "src": "/images/portfolio-content/1-dissertation/dissertation-1.webp",
                 "alt": "Generated Dungeon Layout 1"
             },
             {
-                "src": "/images/portfolio-content/1-dissertation/dissertation-2.png",
+                "src": "/images/portfolio-content/1-dissertation/dissertation-2.webp",
                 "alt": "Generated Dungeon Layout 2"
             },
             {
-                "src": "/images/portfolio-content/1-dissertation/dissertation-3.png",
+                "src": "/images/portfolio-content/1-dissertation/dissertation-3.webp",
                 "alt": "Generated Dungeon Layout 3"
             }
         ],
@@ -42,15 +42,15 @@
         "period": "2023",
         "images": [
             {
-                "src": "/images/portfolio-content/2-chaotic-engine/engine-1.png",
+                "src": "/images/portfolio-content/2-chaotic-engine/engine-1.webp",
                 "alt": "Chaotic Engine 1"
             },
             {
-                "src": "/images/portfolio-content/2-chaotic-engine/engine-2.png",
+                "src": "/images/portfolio-content/2-chaotic-engine/engine-2.webp",
                 "alt": "Chaotic Engine 2"
             },
             {
-                "src": "/images/portfolio-content/2-chaotic-engine/engine-3.png",
+                "src": "/images/portfolio-content/2-chaotic-engine/engine-3.webp",
                 "alt": "Chaotic Engine 3"
             }
         ],
@@ -81,19 +81,19 @@
         "period": "2025",
         "images": [
             {
-                "src": "/images/portfolio-content/3-portfolio-website/homepage.png",
+                "src": "/images/portfolio-content/3-portfolio-website/homepage.webp",
                 "alt": "Home Section"
             },
             {
-                "src": "/images/portfolio-content/3-portfolio-website/about-section.png",
+                "src": "/images/portfolio-content/3-portfolio-website/about-section.webp",
                 "alt": "About Section"
             },
             {
-                "src": "/images/portfolio-content/3-portfolio-website/projects-section.png",
+                "src": "/images/portfolio-content/3-portfolio-website/projects-section.webp",
                 "alt": "Projects Section"
             },
             {
-                "src": "/images/portfolio-content/3-portfolio-website/contact-section.png",
+                "src": "/images/portfolio-content/3-portfolio-website/contact-section.webp",
                 "alt": "Contact Section"
             }
         ],
@@ -126,15 +126,15 @@
         "period": "2024-Present",
         "images": [
             {
-                "src": "/images/portfolio-content/4-slot-games/gold-trio-lil-demon.png",
+                "src": "/images/portfolio-content/4-slot-games/gold-trio-lil-demon.webp",
                 "alt": "Gold Trio Lil Demon Slot Game"
             },
             {
-                "src": "/images/portfolio-content/4-slot-games/lil-sphinx.png",
+                "src": "/images/portfolio-content/4-slot-games/lil-sphinx.webp",
                 "alt": "Gold Trio Lil Sphinx Slot Game"
             },
             {
-                "src": "/images/portfolio-content/4-slot-games/gold-trio-leprechauns-luck.png",
+                "src": "/images/portfolio-content/4-slot-games/gold-trio-leprechauns-luck.webp",
                 "alt": "Gold Trio Leprechaun's Luck Slot Game"
             }
         ],
@@ -168,11 +168,11 @@
         "period": "2018",
         "images": [
             {
-                "src": "/images/portfolio-content/5-maze-fps-game/maze-fps-game-1.png",
+                "src": "/images/portfolio-content/5-maze-fps-game/maze-fps-game-1.webp",
                 "alt": "Maze FPS Game - Gameplay Screenshot 1"
             },
             {
-                "src": "/images/portfolio-content/5-maze-fps-game/maze-fps-game-2.png",
+                "src": "/images/portfolio-content/5-maze-fps-game/maze-fps-game-2.webp",
                 "alt": "Maze FPS Game - Gameplay Screenshot 2"
             }
         ],
@@ -199,11 +199,11 @@
         "period": "2023",
         "images": [
             {
-                "src": "/images/portfolio-content/6-dynamic-menu/dynamic-preference-menu-1.png",
+                "src": "/images/portfolio-content/6-dynamic-menu/dynamic-preference-menu-1.webp",
                 "alt": "Dynamic Preference Menu - Example Menu"
             },
             {
-                "src": "/images/portfolio-content/6-dynamic-menu/dynamic-preference-menu-2.png",
+                "src": "/images/portfolio-content/6-dynamic-menu/dynamic-preference-menu-2.webp",
                 "alt": "Dynamic Preference Menu - Inspector View"
             }
         ],
@@ -229,15 +229,15 @@
         "period": "2019",
         "images": [
             {
-                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-1.png",
+                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-1.webp",
                 "alt": "Ribit Run - Gameplay Screenshot 1"
             },
             {
-                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-2.png",
+                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-2.webp",
                 "alt": "Ribit Run - Gameplay Screenshot 2"
             },
             {
-                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-3.png",
+                "src": "/images/portfolio-content/7-ribit-run-game/ribit-run-game-3.webp",
                 "alt": "Ribit Run - Gameplay Screenshot 2"
             }
         ],
@@ -259,11 +259,11 @@
         "period": "2021",
         "images": [
             {
-                "src": "/images/portfolio-content/8-project-management/tender-proposal-1.png",
+                "src": "/images/portfolio-content/8-project-management/tender-proposal-1.webp",
                 "alt": "Tender Proposal 1"
             },
             {
-                "src": "/images/portfolio-content/8-project-management/tender-proposal-2.png",
+                "src": "/images/portfolio-content/8-project-management/tender-proposal-2.webp",
                 "alt": "Tender Proposal 2"
             }
         ],

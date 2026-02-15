@@ -1,7 +1,7 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { ProfileImage } from '@/components/home'
-import background from '@/assets/background.png'
-import profile from '@/assets/profile.png'
+import background from '@/assets/background.webp'
+import profile from '@/assets/profile.webp'
 import { NavLink } from 'react-router-dom'
 import styles from '@/styles/pages.module.scss'
 

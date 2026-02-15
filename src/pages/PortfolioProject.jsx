@@ -1,6 +1,6 @@
 import { Col, Container, Row, Image, Badge, Carousel } from 'react-bootstrap'
 import { Footer, Section } from '@/components'
-import image from '@/assets/background.png'
+import image from '@/assets/background.webp'
 import styles from '@/styles/pages.module.scss'
 
 export const PortfolioProject = ({ project }) => {

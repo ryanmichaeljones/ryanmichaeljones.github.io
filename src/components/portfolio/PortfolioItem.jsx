@@ -2,7 +2,7 @@ import { Card, Col } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { useImageLoader } from '@/hooks/useImageLoader'
 import { BREAKPOINTS } from '@/constants'
-import background from '@/assets/background.png'
+import background from '@/assets/background.webp'
 import React, { useState, useEffect } from 'react'
 import styles from '@/styles/components.module.scss'
 
