@@ -28,7 +28,7 @@ describe('About', () => {
 
     it('renders the introduction text', () => {
         renderWithRouter(<About />)
-        expect(screen.getByText(/passionate BSc Games Software Engineering graduate/)).toBeInTheDocument()
+        expect(screen.getByText(/Software Engineer and Math Team Lead at Playtech/)).toBeInTheDocument()
     })
 
     it('renders the footer', () => {
