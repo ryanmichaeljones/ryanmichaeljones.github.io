@@ -20,7 +20,6 @@ export const PortfolioProject = ({ project }) => {
                 <Image
                     src={image}
                     alt='Project fallback'
-                    fluid
                     className={`${styles.portfolioCardImg} ${styles.projectImage}`}
                 />
             )
@@ -37,7 +36,6 @@ export const PortfolioProject = ({ project }) => {
                         <Image
                             src={img.src || image}
                             alt={img.alt || `${title} screenshot ${idx + 1}`}
-                            fluid
                             className={`${styles.portfolioCardImg} ${styles.projectImage}`}
                             loading='lazy'
                             decoding='async'
