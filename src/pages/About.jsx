@@ -9,7 +9,6 @@ import { SKILLS_PER_COLUMN } from '@/constants'
 import styles from '@/styles/pages.module.scss'
 
 export const About = () => {
-    // Memoize expensive groupBy calculation
     const skillColData = useMemo(
         () => groupBy(skillsData, (_, i) => Math.floor(i / SKILLS_PER_COLUMN)),
         []
@@ -22,14 +21,12 @@ export const About = () => {
                     <Col xs={12}>
                         <h1>Overview</h1>
                         <p className='mb-2'>
-                            Hi, I'm Ryan!
-                            I'm a passionate BSc Games Software Engineering graduate from Bournemouth University with a strong foundation in problem-solving and software development.
-                            Currently, I serve as Math Team Lead at Playtech's Ash studio, where I specialize in developing mathematics for online gambling slot games.
-                            My enthusiasm for programming drives me to continuously learn new technologies and tackle complex challenges to deliver exceptional results.
-                            Outside of work, I maintain an active lifestyle through going to the gym and enjoy playing strategy games.
+                            Hi, I'm Ryan - a Software Engineer and Math Team Lead at Playtech's Ash studio, where I lead a team developing mathematics for online slot games.
+                            With over four years of experience and a BSc in Games Software Engineering from Bournemouth University, I enjoy solving complex problems and continuously improving the tools and processes my team relies on.
                         </p>
                         <p>
-                            I'm excited to share my projects and experiences with you through this portfolio. Feel free to reach out if you'd like to connect or discuss potential opportunities!
+                            Outside of work, I stay active at the gym and enjoy playing strategy games.
+                            Feel free to explore my projects or get in touch!
                         </p>
                     </Col>
                 </Row>

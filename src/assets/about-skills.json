@@ -4,47 +4,71 @@
         "progress": 99
     },
     {
-        "label": "C++",
-        "progress": 80
+        "label": "JavaScript",
+        "progress": 95
     },
     {
-        "label": "JavaScript",
-        "progress": 99
+        "label": "Unity",
+        "progress": 95
+    },
+    {
+        "label": "Git",
+        "progress": 90
     },
     {
         "label": "HTML + CSS",
-        "progress": 99
+        "progress": 90
     },
     {
-        "label": "Visual Basic for Applications (VBA)",
+        "label": "React",
+        "progress": 85
+    },
+    {
+        "label": "Node.js",
+        "progress": 80
+    },
+    {
+        "label": "Linux Ubuntu",
+        "progress": 75
+    },
+    {
+        "label": "PostgreSQL",
+        "progress": 70
+    },
+    {
+        "label": "C++",
+        "progress": 65
+    },
+    {
+        "label": "VBA",
         "progress": 60
     },
     {
         "label": "Java",
-        "progress": 40
-    },
-    {
-        "label": "Unity",
-        "progress": 99
-    },
-    {
-        "label": "OpenGL",
         "progress": 60
     },
     {
-        "label": "React",
-        "progress": 90
-    },
-    {
-        "label": "Bootstrap",
+        "label": "Mathematics",
         "progress": 99
     },
     {
-        "label": "Linux Ubuntu",
-        "progress": 60
+        "label": "Teamwork",
+        "progress": 99
+    },
+    {
+        "label": "Communication",
+        "progress": 99
     },
     {
         "label": "Problem Solving",
         "progress": 99
+    },
+    {
+        "label": "Leadership",
+        "progress": 75
+    },
+    {
+        "label": "Mentoring",
+        "progress": 75
     }
 ]

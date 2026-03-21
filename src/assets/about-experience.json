@@ -3,24 +3,24 @@
         "title": "Math Team Lead",
         "company": "Playtech",
         "period": "September 2025 - Present",
-        "description": "Lead a team of developers, providing technical guidance and mentorship on game mathematics. Oversee math design and balancing across multiple game projects. Manage web-based simulator and prototype tooling while driving technical decisions and best practices for the team."
+        "description": "Lead and mentor a growing team of developers, delegating tasks and driving technical decisions across multiple game projects. Oversee math design, game balancing, and internal tooling. Actively involved in recruitment and training of new developers. Adapting team processes and tooling to improve efficiency and support expansion into new regulated markets."
     },
     {
         "title": "Game Developer",
         "company": "Playtech",
         "period": "September 2023 - August 2025",
-        "description": "Served as math lead on multiple game projects, designing game logic and producing balanced gaming experiences. Developed and maintained web-based simulator and prototype tooling. Mentored junior developers and collaborated across teams to ensure project success."
+        "description": "Served as math lead on approximately five game projects, independently owning game logic design and mathematical balancing from start to finish. Took full ownership of internal tooling and processes following my manager's departure. Developed an unfinished web-based simulator concept into a fully working solution with a strong UI, enabling the team to push balance updates, view results automatically, and iterate rapidly. Assisted in the recruitment and training of a junior developer. Mentored colleagues and collaborated across teams to ensure project success."
     },
     {
         "title": "Junior Developer",
         "company": "Playtech",
         "period": "October 2021 - August 2023",
-        "description": "Developed simulators to generate math reports and prototypes for game balance optimization. Gained proficiency in C# and JavaScript while contributing to development projects. Led the migration of development tooling from local environments to web servers, improving team workflow."
+        "description": "Developed simulators and prototypes for game balance optimisation, gaining proficiency in C# and JavaScript. Took ownership of migrating game prototyping to the web, making it easy for the team to play and review balances. Played a key role in the broader migration of development tooling from local environments to the web, significantly improving team workflow."
     },
     {
         "title": "Kitchen Porter",
         "company": "The Bell Inn",
         "period": "October 2016 - January 2020",
-        "description": "Maintained high standards in fast-paced kitchen operations, managing cleaning and inventory tasks. Demonstrated strong teamwork and reliability while working under pressure during peak hours. Supported kitchen staff and contributed to overall restaurant efficiency through proactive assistance and attention to detail."
+        "description": "Worked part-time in a fast-paced kitchen environment, demonstrating reliability, teamwork, and strong work ethic over 3 years."
     }
 ]
