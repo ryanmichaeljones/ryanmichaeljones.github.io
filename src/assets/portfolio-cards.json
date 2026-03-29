@@ -13,7 +13,7 @@
         "imagePath": "/images/portfolio-thumbnails/game-engine.webp",
         "title": "Custom Game Engine",
         "text": "Initially a university assignment which I continued to develop",
-        "footer": "C#, OpenGL, SDL"
+        "footer": "C# / C++, OpenGL, SDL"
     },
     {
         "to": "/portfolio/portfolio-website",
@@ -21,7 +21,7 @@
         "imagePath": "/images/portfolio-thumbnails/portfolio-website.webp",
         "title": "Custom Website",
         "text": "Website developed in my free time to host my portfolio of work",
-        "footer": "React, JavaScript, Vite, HTML, CSS"
+        "footer": "JavaScript, React, Vite, HTML, CSS"
     },
     {
         "to": "/portfolio/playtech-slot-games",
