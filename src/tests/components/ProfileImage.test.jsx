@@ -21,9 +21,9 @@ describe('ProfileImage', () => {
         expect(img).toHaveAttribute('decoding', 'async')
     })
 
-    it('renders the blur effect background', () => {
+    it('renders the profile container', () => {
         const { container } = render(<ProfileImage src="/test-image.png" alt="Test profile" />)
-        const blurDiv = container.querySelector('[class*="blurEffect"]')
-        expect(blurDiv).toBeInTheDocument()
+        const profileContainer = container.querySelector('[class*="profileContainer"]')
+        expect(profileContainer).toBeInTheDocument()
     })
 })
